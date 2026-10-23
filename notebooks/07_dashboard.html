@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. Dashboard y despliegue &#8212; Estrato socioeconómico en Barranquilla — Proyecto final</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/07_dashboard';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="8. Conclusiones y limitaciones" href="08_conclusiones.html" />
+    <link rel="prev" title="6. Validación estadística" href="06_validacion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Estrato socioeconómico en Barranquilla — Proyecto final</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Estrato socioeconómico en Barranquilla — Proyecto final de Machine Learning
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_correcciones.html">1. Trazabilidad de correcciones del Entregable 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datos.html">2. Datos: ETL y EDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_benchmarks.html">3. Modelos benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_literatura.html">4. Revisión de literatura y evidencia de novedad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_modelo_original.html">5. El modelo original: ensamble con pesos locales (EPL)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_validacion.html">6. Validación estadística</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Dashboard y despliegue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_conclusiones.html">8. Conclusiones y limitaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_reproducibilidad.html">9. Reproducibilidad y bibliografía</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/07_dashboard.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>7. Dashboard y despliegue</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arquitectura">7.1 Arquitectura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-cada-seccion">7.2 Contenido de cada sección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decisiones-de-diseno">7.3 Decisiones de diseño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#despliegue-en-render">7.4 Despliegue en Render</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artefactos">7.5 Artefactos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capturas">7.6 Capturas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-publica">7.7 URL pública</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dashboard-y-despliegue">
+<h1>7. Dashboard y despliegue<a class="headerlink" href="#dashboard-y-despliegue" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Qué responde este capítulo</p>
+<p>Cómo está construido el dashboard, qué decisiones de diseño se tomaron, cómo se despliega en Render y dónde está.</p>
+</div>
+<section id="arquitectura">
+<h2>7.1 Arquitectura<a class="headerlink" href="#arquitectura" title="Link to this heading">#</a></h2>
+<p>Aplicación <strong>multipágina</strong> de Dash (<code class="docutils literal notranslate"><span class="pre">use_pages=True</span></code>), con una página por sección y la lógica separada de la
+interfaz:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>app.py                  punto de entrada: crea la app, la barra fija y expone server (gunicorn)
+pages/contexto.py       sección 1: problema, pregunta y objetivos, datos y diccionario, metodología, ética, autores
+pages/eda.py            sección 2: filtros globales → dcc.Store → 7 gráficos con interpretación
+pages/modelos.py        sección 3: líderes, predicción en vivo con explicación local, diagnóstico, pruebas, EPL
+src/original_model.py   clase del modelo original
+src/data.py             carga y caché (lru_cache) de datos y artefactos
+src/plots.py            funciones que construyen todas las figuras (una plantilla Plotly)
+src/explicacion.py      valores de Shapley por permutaciones (explicación local)
+artifacts/              modelos serializados (joblib) + metadata.json + referencia de ida y vuelta
+data/dashboard/         datos livianos y resultados ya calculados
+assets/                 CSS (paleta), tema Flatly local, imagen satelital de portada
+tests/                  pruebas (modelo original, explicación, ida y vuelta)
+</pre></div>
+</div>
+<p>El dashboard <strong>nunca entrena ni busca hiperparámetros</strong>: lee <code class="docutils literal notranslate"><span class="pre">data/dashboard/</span></code> (generado por
+<code class="docutils literal notranslate"><span class="pre">experimentos/08_datos_dashboard.py</span></code> y <code class="docutils literal notranslate"><span class="pre">10_datos_modelos_dashboard.py</span></code>) y carga los modelos de <code class="docutils literal notranslate"><span class="pre">artifacts/</span></code>
+una sola vez por proceso (<code class="docutils literal notranslate"><span class="pre">functools.lru_cache</span></code>).</p>
+</section>
+<section id="contenido-de-cada-seccion">
+<h2>7.2 Contenido de cada sección<a class="headerlink" href="#contenido-de-cada-seccion" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sección</p></th>
+<th class="head"><p>Qué responde</p></th>
+<th class="head"><p>Componentes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Contexto</p></td>
+<td><p>¿Qué problema es y por qué importa?</p></td>
+<td><p>Portada con cifra clave citada, relevancia (Ley 142, Ley 1450, DANE), pregunta y objetivos, fuente y diccionario de 22 variables, diagrama de la metodología, limitaciones, ética, autores, versión y fecha</p></td>
+</tr>
+<tr class="row-odd"><td><p>EDA</p></td>
+<td><p>¿Qué variables se asocian al estrato y dónde?</p></td>
+<td><p>Filtros globales (estratos, régimen, área, posición sur–norte) que actualizan todos los gráficos; distribución del objetivo; mapa; histograma y atípicos por variable (con escala log); correlación de Spearman; faltantes; explorador bivariado (x, y y color a elección); una frase de interpretación por gráfico, recalculada con los filtros</p></td>
+</tr>
+<tr class="row-even"><td><p>Modelos</p></td>
+<td><p>¿Qué modelo es mejor, qué predice para mi vivienda y por qué?</p></td>
+<td><p>Tabla de líderes ordenable y filtrable; selector de modelo; predicción en vivo con formulario generado del esquema, validación de rangos y tipos, viviendas de ejemplo del test y clic en el mapa; probabilidad por estrato y explicación local; matriz de confusión, ROC, precisión-recall y calibración en el test; importancia global; diagrama de diferencia crítica y tabla de pruebas (versión 1 y 2); subsección del modelo original con pseudocódigo, diferencias con la literatura, convergencia, ablación, campo de pesos y veredicto</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="decisiones-de-diseno">
+<h2>7.3 Decisiones de diseño<a class="headerlink" href="#decisiones-de-diseno" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Paleta de cinco colores</strong> (azul oscuro, azul, dorado, naranja solo para el modelo original, gris) y una rampa de
+un solo tono para los estratos; cada gráfico rotula los estratos, así que no depende solo del color.</p></li>
+<li><p><strong>Tema Flatly</strong> de dash-bootstrap-components como archivo local (no depende de un CDN), barra fija, rejilla
+<code class="docutils literal notranslate"><span class="pre">dbc.Row</span></code>/<code class="docutils literal notranslate"><span class="pre">dbc.Col</span></code> para escritorio y tableta.</p></li>
+<li><p><strong>Rendimiento</strong>: datos y modelos se cargan una vez; los filtros calculan una sola vez las filas que cumplen y las
+guardan en un <code class="docutils literal notranslate"><span class="pre">dcc.Store</span></code> que leen los demás callbacks; <code class="docutils literal notranslate"><span class="pre">prevent_initial_call</span></code> y <code class="docutils literal notranslate"><span class="pre">no_update</span></code> donde aplica.</p></li>
+<li><p><strong>Robustez</strong>: el formulario valida tipo y rango de cada entrada (rango de entrenamiento guardado en
+<code class="docutils literal notranslate"><span class="pre">metadata.json</span></code>) y los errores se muestran con <code class="docutils literal notranslate"><span class="pre">dbc.Alert</span></code>; un error del modelo no detiene la aplicación.</p></li>
+<li><p><strong>Explicación local sin la librería shap</strong>: valores de Shapley por muestreo de permutaciones
+<span class="bibtex-citation" id="id1">[<a class="reference internal" href="09_reproducibilidad.html#id44" title="E. Štrumbelj and I. Kononenko. Explaining prediction models and individual predictions with feature contributions. Knowledge and Information Systems, 41(3):647–665, 2014.">Štrumbelj and Kononenko, 2014</a>]</span> (el mismo estimador de <code class="docutils literal notranslate"><span class="pre">shap.PermutationExplainer</span></code>) implementados en
+<code class="docutils literal notranslate"><span class="pre">src/explicacion.py</span></code>, con eficiencia exacta (las contribuciones suman la diferencia entre la predicción y el
+valor base). Se evita instalar <code class="docutils literal notranslate"><span class="pre">shap</span></code> y sus dependencias en un servidor de 512 MB.</p></li>
+<li><p><strong>Privacidad</strong>: sin número predial y con las coordenadas redondeadas a ~100 m.</p></li>
+</ul>
+</section>
+<section id="despliegue-en-render">
+<h2>7.4 Despliegue en Render<a class="headerlink" href="#despliegue-en-render" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Verificar en local: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> (puerto 8050) y que <code class="docutils literal notranslate"><span class="pre">app.server</span></code> existe.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> con versiones exactas (incluye <code class="docutils literal notranslate"><span class="pre">gunicorn</span></code>) y <code class="docutils literal notranslate"><span class="pre">render.yaml</span></code> con
+<code class="docutils literal notranslate"><span class="pre">PYTHON_VERSION</span> <span class="pre">=</span> <span class="pre">3.11.15</span></code>.</p></li>
+<li><p>Subir el repositorio a GitHub.</p></li>
+<li><p>En Render: <em>New → Web Service</em> (o <em>Blueprint</em> con <code class="docutils literal notranslate"><span class="pre">render.yaml</span></code>), conectar el repositorio, <em>Build Command</em>
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>, <em>Start Command</em> <code class="docutils literal notranslate"><span class="pre">gunicorn</span> <span class="pre">app:server</span> <span class="pre">--workers</span> <span class="pre">1</span> <span class="pre">--threads</span> <span class="pre">2</span> <span class="pre">--timeout</span> <span class="pre">120</span></code>.</p></li>
+<li><p>Revisar los registros de construcción y abrir todas las páginas y callbacks en la URL pública.</p></li>
+</ol>
+<p>En el plan gratuito el servicio se duerme sin visitas (la primera carga tarda cerca de un minuto) y tiene 512 MB de
+memoria; por eso los artefactos se guardan comprimidos y la página de modelos carga cada modelo solo cuando se
+elige. Los tamaños y la memoria medida están en la sección 7.5.</p>
+</section>
+<section id="artefactos">
+<h2>7.5 Artefactos<a class="headerlink" href="#artefactos" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">RAIZ</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">ruta</span> <span class="o">=</span> <span class="n">RAIZ</span> <span class="o">/</span> <span class="s2">"artifacts"</span> <span class="o">/</span> <span class="s2">"metadata.json"</span>
+<span class="k">if</span> <span class="n">ruta</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">meta</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">ruta</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
+    <span class="n">tabla</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([{</span><span class="s2">"modelo"</span><span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="s2">"archivo"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"archivo"</span><span class="p">],</span> <span class="s2">"MB"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"tamano_MB"</span><span class="p">],</span>
+                           <span class="s2">"entrenamiento (s)"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"seg_entrenamiento"</span><span class="p">],</span>
+                           <span class="s2">"inferencia (ms por vivienda)"</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s2">"ms_inferencia_por_vivienda"</span><span class="p">],</span> <span class="mi">3</span><span class="p">),</span>
+                           <span class="s2">"ida y vuelta idéntica"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"ida_y_vuelta_identica"</span><span class="p">]}</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"modelos"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">tabla</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Versiones:"</span><span class="p">,</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"librerias"</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Pendiente: experimentos/07_artefactos.py"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>modelo</th>
+      <th>archivo</th>
+      <th>MB</th>
+      <th>entrenamiento (s)</th>
+      <th>inferencia (ms por vivienda)</th>
+      <th>ida y vuelta idéntica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>KNN</td>
+      <td>knn.joblib</td>
+      <td>0.81</td>
+      <td>0.2</td>
+      <td>0.773</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Naive Bayes</td>
+      <td>naive_bayes.joblib</td>
+      <td>0.04</td>
+      <td>0.5</td>
+      <td>0.017</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Logística L1/L2</td>
+      <td>logistica_l1_l2.joblib</td>
+      <td>0.01</td>
+      <td>24.4</td>
+      <td>0.016</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Árbol de decisión</td>
+      <td>arbol_de_decision.joblib</td>
+      <td>0.06</td>
+      <td>1.3</td>
+      <td>0.016</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Random Forest</td>
+      <td>random_forest.joblib</td>
+      <td>8.15</td>
+      <td>16.7</td>
+      <td>0.057</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XGBoost</td>
+      <td>xgboost.joblib</td>
+      <td>0.75</td>
+      <td>10.4</td>
+      <td>0.072</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SVM</td>
+      <td>svm.joblib</td>
+      <td>0.73</td>
+      <td>11.5</td>
+      <td>0.037</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>XGBoost geográfico</td>
+      <td>xgboost_geografico.joblib</td>
+      <td>2.42</td>
+      <td>11.3</td>
+      <td>0.072</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>LightGBM</td>
+      <td>lightgbm.joblib</td>
+      <td>5.61</td>
+      <td>11.5</td>
+      <td>0.420</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>CatBoost</td>
+      <td>catboost.joblib</td>
+      <td>0.16</td>
+      <td>7.2</td>
+      <td>0.019</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EPL (original)</td>
+      <td>epl__original.joblib</td>
+      <td>10.53</td>
+      <td>269.8</td>
+      <td>0.702</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Versiones: {'python': '3.14.6', 'numpy': '2.4.4', 'scipy': '1.17.1', 'pandas': '3.0.2', 'scikit-learn': '1.8.0', 'imbalanced-learn': '0.14.2', 'xgboost': '3.2.0', 'lightgbm': '4.7.0', 'catboost': '1.2.10', 'joblib': '1.5.3'}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="capturas">
+<h2>7.6 Capturas<a class="headerlink" href="#capturas" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="fig-captura-contexto">
+<a class="reference internal image-reference" href="../_images/captura_contexto.png"><img alt="../_images/captura_contexto.png" src="../_images/captura_contexto.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figura 1 </span><span class="caption-text">Página Contexto: portada con la imagen satelital, relevancia, pregunta y objetivos, datos, metodología y autores.</span><a class="headerlink" href="#fig-captura-contexto" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-captura-eda">
+<a class="reference internal image-reference" href="../_images/captura_eda.png"><img alt="../_images/captura_eda.png" src="../_images/captura_eda.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figura 2 </span><span class="caption-text">Página EDA: filtros globales arriba y cada gráfico con su frase de interpretación.</span><a class="headerlink" href="#fig-captura-eda" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-captura-modelos">
+<a class="reference internal image-reference" href="../_images/captura_modelos.png"><img alt="../_images/captura_modelos.png" src="../_images/captura_modelos.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figura 3 </span><span class="caption-text">Página Modelos: tabla de líderes, predicción en vivo y diagnóstico del modelo elegido en el test.</span><a class="headerlink" href="#fig-captura-modelos" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="url-publica">
+<h2>7.7 URL pública<a class="headerlink" href="#url-publica" title="Link to this heading">#</a></h2>
+<p>El dashboard se publica en Render desde el repositorio del proyecto; la dirección exacta queda en la introducción
+del libro y en el <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="06_validacion.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">6. Validación estadística</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="08_conclusiones.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">8. Conclusiones y limitaciones</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arquitectura">7.1 Arquitectura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-cada-seccion">7.2 Contenido de cada sección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decisiones-de-diseno">7.3 Decisiones de diseño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#despliegue-en-render">7.4 Despliegue en Render</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artefactos">7.5 Artefactos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capturas">7.6 Capturas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#url-publica">7.7 URL pública</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por María Carolina Cantillo Orozco (200179105) y Juan Camilo Oñoro Araujo (200177329)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

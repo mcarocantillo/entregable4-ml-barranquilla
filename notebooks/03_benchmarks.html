@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Modelos benchmark &#8212; Estrato socioeconómico en Barranquilla — Proyecto final</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/03_benchmarks';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="4. Revisión de literatura y evidencia de novedad" href="04_literatura.html" />
+    <link rel="prev" title="2. Datos: ETL y EDA" href="02_datos.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Estrato socioeconómico en Barranquilla — Proyecto final</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Estrato socioeconómico en Barranquilla — Proyecto final de Machine Learning
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_correcciones.html">1. Trazabilidad de correcciones del Entregable 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datos.html">2. Datos: ETL y EDA</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Modelos benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_literatura.html">4. Revisión de literatura y evidencia de novedad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_modelo_original.html">5. El modelo original: ensamble con pesos locales (EPL)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_validacion.html">6. Validación estadística</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_dashboard.html">7. Dashboard y despliegue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_conclusiones.html">8. Conclusiones y limitaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_reproducibilidad.html">9. Reproducibilidad y bibliografía</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/03_benchmarks.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3. Modelos benchmark</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-seleccion">3.1 Criterio de selección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-combinaciones-en-la-validacion-repetida-5-5">3.2 Mejores combinaciones en la validación repetida 5 × 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reentrenamiento-final-y-serializacion">3.3 Reentrenamiento final y serialización</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="modelos-benchmark">
+<h1>3. Modelos benchmark<a class="headerlink" href="#modelos-benchmark" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Qué responde este capítulo</p>
+<p>Cuál es la mejor combinación (balanceo y optimizador) de cada modelo, cómo se eligió, cuánto rinde en una validación
+repetida que no participó en la elección y cómo se reentrenó y serializó.</p>
+</div>
+<section id="criterio-de-seleccion">
+<h2>3.1 Criterio de selección<a class="headerlink" href="#criterio-de-seleccion" title="Link to this heading">#</a></h2>
+<p>Del universo del E3 (8 modelos × 4 técnicas de balanceo × 4 métodos de optimización = 128 combinaciones, cada una
+con validación anidada kNNDM de 5 × 3 pliegues y 12 evaluaciones), para cada uno de los <strong>7 modelos de la guía</strong> se
+toma la combinación con mayor <strong>F1 macro medio del bucle externo</strong>. Se agregan el XGBoost geográfico (la propuesta
+del E2/E3, como referencia) y dos métodos recientes del estado del arte, <strong>LightGBM</strong> <span class="bibtex-citation" id="id1">[<a class="reference internal" href="09_reproducibilidad.html#id47" title="G. Ke, Q. Meng, T. Finley, T. Wang, W. Chen, W. Ma, Q. Ye, and T.-Y. Liu. LightGBM: a highly efficient gradient boosting decision tree. In Advances in Neural Information Processing Systems, volume 30. 2017.">Ke <em>et al.</em>, 2017</a>]</span> y
+<strong>CatBoost</strong> <span class="bibtex-citation" id="id2">[<a class="reference internal" href="09_reproducibilidad.html#id48" title="L. Prokhorenkova, G. Gusev, A. Vorobev, A. V. Dorogush, and A. Gulin. CatBoost: unbiased boosting with categorical features. In Advances in Neural Information Processing Systems, volume 31. 2018.">Prokhorenkova <em>et al.</em>, 2018</a>]</span>, con pesos de clase y búsqueda bayesiana, el mismo presupuesto y las mismas
+particiones.</p>
+<p>La mejor combinación global (Random Forest con SMOTE y algoritmo genético, 0.658) está en el grupo de cabeza de
+Friedman → Nemenyi del E3 (a 1.02 rangos del mejor, con diferencia crítica 1.86): el criterio es estadístico y la
+elección es consistente con la comparación múltiple.</p>
+</section>
+<section id="mejores-combinaciones-en-la-validacion-repetida-5-5">
+<h2>3.2 Mejores combinaciones en la validación repetida 5 × 5<a class="headerlink" href="#mejores-combinaciones-en-la-validacion-repetida-5-5" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">RAIZ</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">RAIZ</span> <span class="o">/</span> <span class="s2">"resultados"</span> <span class="o">/</span> <span class="s2">"cv5x5"</span> <span class="o">/</span> <span class="s2">"f1_por_pliegue_v2.csv"</span><span class="p">)</span>
+<span class="n">meta</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">((</span><span class="n">RAIZ</span> <span class="o">/</span> <span class="s2">"artifacts"</span> <span class="o">/</span> <span class="s2">"metadata.json"</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
+<span class="n">filas</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"modelos"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">==</span> <span class="s2">"EPL (original)"</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">T</span><span class="p">[</span><span class="n">nombre</span><span class="p">]</span>
+    <span class="n">filas</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"modelo"</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">"grupo"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"grupo"</span><span class="p">],</span> <span class="s2">"balanceo"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"balanceo"</span><span class="p">],</span> <span class="s2">"optimizador"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"metodo"</span><span class="p">],</span>
+                  <span class="s2">"F1 rep. 0 (E3)"</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="n">T</span><span class="o">.</span><span class="n">rep</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">3</span><span class="p">),</span> <span class="s2">"F1 reps. 1–4"</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="n">T</span><span class="o">.</span><span class="n">rep</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">3</span><span class="p">),</span>
+                  <span class="s2">"F1 25 pliegues"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">col</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">col</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+                  <span class="s2">"inferencia (ms/viv.)"</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s2">"ms_inferencia_por_vivienda"</span><span class="p">],</span> <span class="mi">3</span><span class="p">)})</span>
+<span class="n">tabla</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">filas</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"F1 reps. 1–4"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tabla</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"index"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_69b06">
+  <thead>
+    <tr>
+      <th id="T_69b06_level0_col0" class="col_heading level0 col0" >modelo</th>
+      <th id="T_69b06_level0_col1" class="col_heading level0 col1" >grupo</th>
+      <th id="T_69b06_level0_col2" class="col_heading level0 col2" >balanceo</th>
+      <th id="T_69b06_level0_col3" class="col_heading level0 col3" >optimizador</th>
+      <th id="T_69b06_level0_col4" class="col_heading level0 col4" >F1 rep. 0 (E3)</th>
+      <th id="T_69b06_level0_col5" class="col_heading level0 col5" >F1 reps. 1–4</th>
+      <th id="T_69b06_level0_col6" class="col_heading level0 col6" >F1 25 pliegues</th>
+      <th id="T_69b06_level0_col7" class="col_heading level0 col7" >inferencia (ms/viv.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_69b06_row0_col0" class="data row0 col0" >CatBoost</td>
+      <td id="T_69b06_row0_col1" class="data row0 col1" >reciente</td>
+      <td id="T_69b06_row0_col2" class="data row0 col2" >class_weight</td>
+      <td id="T_69b06_row0_col3" class="data row0 col3" >Bayesiana</td>
+      <td id="T_69b06_row0_col4" class="data row0 col4" >0.648000</td>
+      <td id="T_69b06_row0_col5" class="data row0 col5" >0.595000</td>
+      <td id="T_69b06_row0_col6" class="data row0 col6" >0.605 ± 0.103</td>
+      <td id="T_69b06_row0_col7" class="data row0 col7" >0.019000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row1_col0" class="data row1 col0" >Random Forest</td>
+      <td id="T_69b06_row1_col1" class="data row1 col1" >guia</td>
+      <td id="T_69b06_row1_col2" class="data row1 col2" >smote</td>
+      <td id="T_69b06_row1_col3" class="data row1 col3" >Genética</td>
+      <td id="T_69b06_row1_col4" class="data row1 col4" >0.658000</td>
+      <td id="T_69b06_row1_col5" class="data row1 col5" >0.592000</td>
+      <td id="T_69b06_row1_col6" class="data row1 col6" >0.605 ± 0.097</td>
+      <td id="T_69b06_row1_col7" class="data row1 col7" >0.057000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row2_col0" class="data row2 col0" >XGBoost</td>
+      <td id="T_69b06_row2_col1" class="data row2 col1" >guia</td>
+      <td id="T_69b06_row2_col2" class="data row2 col2" >smote</td>
+      <td id="T_69b06_row2_col3" class="data row2 col3" >Random</td>
+      <td id="T_69b06_row2_col4" class="data row2 col4" >0.656000</td>
+      <td id="T_69b06_row2_col5" class="data row2 col5" >0.584000</td>
+      <td id="T_69b06_row2_col6" class="data row2 col6" >0.599 ± 0.107</td>
+      <td id="T_69b06_row2_col7" class="data row2 col7" >0.072000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row3_col0" class="data row3 col0" >Logística L1/L2</td>
+      <td id="T_69b06_row3_col1" class="data row3 col1" >guia</td>
+      <td id="T_69b06_row3_col2" class="data row3 col2" >ninguno</td>
+      <td id="T_69b06_row3_col3" class="data row3 col3" >Bayesiana</td>
+      <td id="T_69b06_row3_col4" class="data row3 col4" >0.607000</td>
+      <td id="T_69b06_row3_col5" class="data row3 col5" >0.583000</td>
+      <td id="T_69b06_row3_col6" class="data row3 col6" >0.588 ± 0.089</td>
+      <td id="T_69b06_row3_col7" class="data row3 col7" >0.016000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row4_col0" class="data row4 col0" >XGBoost geográfico</td>
+      <td id="T_69b06_row4_col1" class="data row4 col1" >referencia</td>
+      <td id="T_69b06_row4_col2" class="data row4 col2" >class_weight</td>
+      <td id="T_69b06_row4_col3" class="data row4 col3" >Bayesiana</td>
+      <td id="T_69b06_row4_col4" class="data row4 col4" >0.656000</td>
+      <td id="T_69b06_row4_col5" class="data row4 col5" >0.569000</td>
+      <td id="T_69b06_row4_col6" class="data row4 col6" >0.586 ± 0.108</td>
+      <td id="T_69b06_row4_col7" class="data row4 col7" >0.072000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row5_col0" class="data row5 col0" >LightGBM</td>
+      <td id="T_69b06_row5_col1" class="data row5 col1" >reciente</td>
+      <td id="T_69b06_row5_col2" class="data row5 col2" >class_weight</td>
+      <td id="T_69b06_row5_col3" class="data row5 col3" >Bayesiana</td>
+      <td id="T_69b06_row5_col4" class="data row5 col4" >0.654000</td>
+      <td id="T_69b06_row5_col5" class="data row5 col5" >0.567000</td>
+      <td id="T_69b06_row5_col6" class="data row5 col6" >0.584 ± 0.129</td>
+      <td id="T_69b06_row5_col7" class="data row5 col7" >0.420000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row6_col0" class="data row6 col0" >SVM</td>
+      <td id="T_69b06_row6_col1" class="data row6 col1" >guia</td>
+      <td id="T_69b06_row6_col2" class="data row6 col2" >class_weight</td>
+      <td id="T_69b06_row6_col3" class="data row6 col3" >Grid</td>
+      <td id="T_69b06_row6_col4" class="data row6 col4" >0.617000</td>
+      <td id="T_69b06_row6_col5" class="data row6 col5" >0.564000</td>
+      <td id="T_69b06_row6_col6" class="data row6 col6" >0.575 ± 0.091</td>
+      <td id="T_69b06_row6_col7" class="data row6 col7" >0.037000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row7_col0" class="data row7 col0" >KNN</td>
+      <td id="T_69b06_row7_col1" class="data row7 col1" >guia</td>
+      <td id="T_69b06_row7_col2" class="data row7 col2" >class_weight</td>
+      <td id="T_69b06_row7_col3" class="data row7 col3" >Bayesiana</td>
+      <td id="T_69b06_row7_col4" class="data row7 col4" >0.600000</td>
+      <td id="T_69b06_row7_col5" class="data row7 col5" >0.551000</td>
+      <td id="T_69b06_row7_col6" class="data row7 col6" >0.561 ± 0.099</td>
+      <td id="T_69b06_row7_col7" class="data row7 col7" >0.773000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row8_col0" class="data row8 col0" >Árbol de decisión</td>
+      <td id="T_69b06_row8_col1" class="data row8 col1" >guia</td>
+      <td id="T_69b06_row8_col2" class="data row8 col2" >smote</td>
+      <td id="T_69b06_row8_col3" class="data row8 col3" >Grid</td>
+      <td id="T_69b06_row8_col4" class="data row8 col4" >0.599000</td>
+      <td id="T_69b06_row8_col5" class="data row8 col5" >0.497000</td>
+      <td id="T_69b06_row8_col6" class="data row8 col6" >0.518 ± 0.099</td>
+      <td id="T_69b06_row8_col7" class="data row8 col7" >0.016000</td>
+    </tr>
+    <tr>
+      <td id="T_69b06_row9_col0" class="data row9 col0" >Naive Bayes</td>
+      <td id="T_69b06_row9_col1" class="data row9 col1" >guia</td>
+      <td id="T_69b06_row9_col2" class="data row9 col2" >smote</td>
+      <td id="T_69b06_row9_col3" class="data row9 col3" >Bayesiana</td>
+      <td id="T_69b06_row9_col4" class="data row9 col4" >0.452000</td>
+      <td id="T_69b06_row9_col5" class="data row9 col5" >0.395000</td>
+      <td id="T_69b06_row9_col6" class="data row9 col6" >0.406 ± 0.077</td>
+      <td id="T_69b06_row9_col7" class="data row9 col7" >0.017000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p><strong>Lectura.</strong> La repetición 0 son los mismos pliegues con que el E3 eligió las combinaciones; las repeticiones 1–4
+son particiones kNNDM nuevas. <strong>Todos los modelos bajan en las particiones nuevas</strong> (el Random Forest de 0.658 a
+0.592): es el sesgo de selección de haber elegido y reportado con los mismos pliegues (fila 17 del capítulo 1). El
+orden se mantiene en la cabeza: Random Forest, CatBoost y XGBoost quedan a menos de 0.01 entre sí, y la logística y
+el XGBoost geográfico detrás. Naive Bayes queda último, como en el E3.</p>
+</section>
+<section id="reentrenamiento-final-y-serializacion">
+<h2>3.3 Reentrenamiento final y serialización<a class="headerlink" href="#reentrenamiento-final-y-serializacion" title="Link to this heading">#</a></h2>
+<p>Una vez fijada la combinación, el <strong>mismo procedimiento</strong> que se validó (búsqueda con el mismo método y 12
+evaluaciones, usando los 5 pliegues externos de la repetición 0 como validación) se aplica a toda la submuestra
+de entrenamiento y el pipeline completo —preprocesamiento del E1 → [SMOTE] → modelo— se reentrena con las 10 001
+viviendas y se guarda con <code class="docutils literal notranslate"><span class="pre">joblib.dump(...,</span> <span class="pre">compress=3)</span></code> en <code class="docutils literal notranslate"><span class="pre">artifacts/</span></code>. Para los 7 modelos de la guía y el
+geográfico se reutilizan los hiperparámetros de esa búsqueda del E3; LightGBM, CatBoost y el modelo original se
+buscan aquí. Junto a cada modelo, <code class="docutils literal notranslate"><span class="pre">artifacts/metadata.json</span></code> guarda versiones de las librerías, semilla,
+hiperparámetros, esquema de columnas (tipo y rango válido), métricas del bucle externo y tiempos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([{</span><span class="s2">"modelo"</span><span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="s2">"archivo"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"archivo"</span><span class="p">],</span> <span class="s2">"MB"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"tamano_MB"</span><span class="p">],</span> <span class="s2">"entrenamiento (s)"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"seg_entrenamiento"</span><span class="p">],</span>
+               <span class="s2">"ida y vuelta idéntica"</span><span class="p">:</span> <span class="n">m</span><span class="p">[</span><span class="s2">"ida_y_vuelta_identica"</span><span class="p">],</span> <span class="s2">"hiperparámetros"</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s2">"params"</span><span class="p">])[:</span><span class="mi">120</span><span class="p">]}</span>
+              <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meta</span><span class="p">[</span><span class="s2">"modelos"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"index"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_240f3">
+  <thead>
+    <tr>
+      <th id="T_240f3_level0_col0" class="col_heading level0 col0" >modelo</th>
+      <th id="T_240f3_level0_col1" class="col_heading level0 col1" >archivo</th>
+      <th id="T_240f3_level0_col2" class="col_heading level0 col2" >MB</th>
+      <th id="T_240f3_level0_col3" class="col_heading level0 col3" >entrenamiento (s)</th>
+      <th id="T_240f3_level0_col4" class="col_heading level0 col4" >ida y vuelta idéntica</th>
+      <th id="T_240f3_level0_col5" class="col_heading level0 col5" >hiperparámetros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_240f3_row0_col0" class="data row0 col0" >KNN</td>
+      <td id="T_240f3_row0_col1" class="data row0 col1" >knn.joblib</td>
+      <td id="T_240f3_row0_col2" class="data row0 col2" >0.810000</td>
+      <td id="T_240f3_row0_col3" class="data row0 col3" >0.200000</td>
+      <td id="T_240f3_row0_col4" class="data row0 col4" >True</td>
+      <td id="T_240f3_row0_col5" class="data row0 col5" >{"n_neighbors": 54, "weights": "distance", "p": 1}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row1_col0" class="data row1 col0" >Naive Bayes</td>
+      <td id="T_240f3_row1_col1" class="data row1 col1" >naive_bayes.joblib</td>
+      <td id="T_240f3_row1_col2" class="data row1 col2" >0.040000</td>
+      <td id="T_240f3_row1_col3" class="data row1 col3" >0.500000</td>
+      <td id="T_240f3_row1_col4" class="data row1 col4" >True</td>
+      <td id="T_240f3_row1_col5" class="data row1 col5" >{"var_smoothing": 0.03214719348281692}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row2_col0" class="data row2 col0" >Logística L1/L2</td>
+      <td id="T_240f3_row2_col1" class="data row2 col1" >logistica_l1_l2.joblib</td>
+      <td id="T_240f3_row2_col2" class="data row2 col2" >0.010000</td>
+      <td id="T_240f3_row2_col3" class="data row2 col3" >24.400000</td>
+      <td id="T_240f3_row2_col4" class="data row2 col4" >True</td>
+      <td id="T_240f3_row2_col5" class="data row2 col5" >{"penalty": "l1", "C": 0.47367173240839705}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row3_col0" class="data row3 col0" >Árbol de decisión</td>
+      <td id="T_240f3_row3_col1" class="data row3 col1" >arbol_de_decision.joblib</td>
+      <td id="T_240f3_row3_col2" class="data row3 col2" >0.060000</td>
+      <td id="T_240f3_row3_col3" class="data row3 col3" >1.300000</td>
+      <td id="T_240f3_row3_col4" class="data row3 col4" >True</td>
+      <td id="T_240f3_row3_col5" class="data row3 col5" >{"max_depth": 10, "min_samples_leaf": 5, "criterion": "entropy"}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row4_col0" class="data row4 col0" >Random Forest</td>
+      <td id="T_240f3_row4_col1" class="data row4 col1" >random_forest.joblib</td>
+      <td id="T_240f3_row4_col2" class="data row4 col2" >8.150000</td>
+      <td id="T_240f3_row4_col3" class="data row4 col3" >16.700000</td>
+      <td id="T_240f3_row4_col4" class="data row4 col4" >True</td>
+      <td id="T_240f3_row4_col5" class="data row4 col5" >{"n_estimators": 141, "max_depth": 21, "max_features": 0.3, "min_samples_leaf": 2}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row5_col0" class="data row5 col0" >XGBoost</td>
+      <td id="T_240f3_row5_col1" class="data row5 col1" >xgboost.joblib</td>
+      <td id="T_240f3_row5_col2" class="data row5 col2" >0.750000</td>
+      <td id="T_240f3_row5_col3" class="data row5 col3" >10.400000</td>
+      <td id="T_240f3_row5_col4" class="data row5 col4" >True</td>
+      <td id="T_240f3_row5_col5" class="data row5 col5" >{"n_estimators": 202, "learning_rate": 0.04696344667875392, "max_depth": 5, "subsample": 0.6175215063148914, "colsample_</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row6_col0" class="data row6 col0" >SVM</td>
+      <td id="T_240f3_row6_col1" class="data row6 col1" >svm.joblib</td>
+      <td id="T_240f3_row6_col2" class="data row6 col2" >0.730000</td>
+      <td id="T_240f3_row6_col3" class="data row6 col3" >11.500000</td>
+      <td id="T_240f3_row6_col4" class="data row6 col4" >True</td>
+      <td id="T_240f3_row6_col5" class="data row6 col5" >{"gamma": 0.03, "n_components": 300, "C": 10.0}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row7_col0" class="data row7 col0" >XGBoost geográfico</td>
+      <td id="T_240f3_row7_col1" class="data row7 col1" >xgboost_geografico.joblib</td>
+      <td id="T_240f3_row7_col2" class="data row7 col2" >2.420000</td>
+      <td id="T_240f3_row7_col3" class="data row7 col3" >11.300000</td>
+      <td id="T_240f3_row7_col4" class="data row7 col4" >True</td>
+      <td id="T_240f3_row7_col5" class="data row7 col5" >{"n_estimators": 186, "learning_rate": 0.04386723024324426, "max_depth": 8, "frac_vecinos": 0.1233959246959953, "alpha":</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row8_col0" class="data row8 col0" >LightGBM</td>
+      <td id="T_240f3_row8_col1" class="data row8 col1" >lightgbm.joblib</td>
+      <td id="T_240f3_row8_col2" class="data row8 col2" >5.610000</td>
+      <td id="T_240f3_row8_col3" class="data row8 col3" >11.500000</td>
+      <td id="T_240f3_row8_col4" class="data row8 col4" >True</td>
+      <td id="T_240f3_row8_col5" class="data row8 col5" >{"n_estimators": 318, "learning_rate": 0.16515182865193914, "num_leaves": 61, "min_child_samples": 5, "subsample": 0.970</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row9_col0" class="data row9 col0" >CatBoost</td>
+      <td id="T_240f3_row9_col1" class="data row9 col1" >catboost.joblib</td>
+      <td id="T_240f3_row9_col2" class="data row9 col2" >0.160000</td>
+      <td id="T_240f3_row9_col3" class="data row9 col3" >7.200000</td>
+      <td id="T_240f3_row9_col4" class="data row9 col4" >True</td>
+      <td id="T_240f3_row9_col5" class="data row9 col5" >{"iterations": 230, "learning_rate": 0.15317709628184267, "depth": 4, "l2_leaf_reg": 9.330606024425668}</td>
+    </tr>
+    <tr>
+      <td id="T_240f3_row10_col0" class="data row10 col0" >EPL (original)</td>
+      <td id="T_240f3_row10_col1" class="data row10 col1" >epl__original.joblib</td>
+      <td id="T_240f3_row10_col2" class="data row10 col2" >10.530000</td>
+      <td id="T_240f3_row10_col3" class="data row10 col3" >269.800000</td>
+      <td id="T_240f3_row10_col4" class="data row10 col4" >True</td>
+      <td id="T_240f3_row10_col5" class="data row10 col5" >{"n_anclas": 16, "ancho_banda": 1.375827946956159, "k_anclas": 1, "lam": 0.1161172824887235, "peso_clase": "balanced", "</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p><strong>Prueba de ida y vuelta.</strong> Cada archivo se vuelve a cargar y sus probabilidades sobre 2 000 viviendas fijas del test
+se comparan con las del modelo en memoria: son <strong>idénticas</strong> en todos (<code class="docutils literal notranslate"><span class="pre">tests/test_artefactos.py</span></code> lo repite en
+cada ejecución de las pruebas). Los artefactos pesan entre 0.01 y 10.5 MB; el mayor es el modelo original, que
+guarda sus 7 expertos. Ninguno exige Git LFS ni reducir árboles.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="02_datos.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">2. Datos: ETL y EDA</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="04_literatura.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">4. Revisión de literatura y evidencia de novedad</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-seleccion">3.1 Criterio de selección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mejores-combinaciones-en-la-validacion-repetida-5-5">3.2 Mejores combinaciones en la validación repetida 5 × 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reentrenamiento-final-y-serializacion">3.3 Reentrenamiento final y serialización</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por María Carolina Cantillo Orozco (200179105) y Juan Camilo Oñoro Araujo (200177329)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

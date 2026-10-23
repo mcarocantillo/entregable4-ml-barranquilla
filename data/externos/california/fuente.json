@@ -1,0 +1,23 @@
+{
+ "openml_id": 537,
+ "nombre_openml": "houses",
+ "version": "1",
+ "url": "https://www.openml.org/d/537",
+ "licencia": "Public",
+ "descargado": "2026-10-23",
+ "filas": 20640,
+ "columnas": [
+  "median_house_value",
+  "median_income",
+  "housing_median_age",
+  "total_rooms",
+  "total_bedrooms",
+  "population",
+  "households",
+  "latitude",
+  "longitude"
+ ],
+ "objetivo_openml": [
+  "median_house_value"
+ ]
+}

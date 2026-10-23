@@ -1,0 +1,23 @@
+{
+ "conjunto": "california",
+ "modelo": "Random Forest",
+ "balanceo": "smote",
+ "metodo": "Genética",
+ "repeticion": 0,
+ "fold": 0,
+ "params": {
+  "n_estimators": 141,
+  "max_depth": 22,
+  "max_features": 0.3,
+  "min_samples_leaf": 2
+ },
+ "f1_interno_mejor": 0.3657766156143687,
+ "f1": 0.4117792841748033,
+ "accuracy": 0.4236453201970443,
+ "mae_ordinal": 0.8651477832512315,
+ "seg_busqueda": 65.9103150999872,
+ "seg_ajuste_final": 2.7525772000080906,
+ "seg_inferencia": 0.10110520001035184,
+ "n_train": 3377,
+ "n_val": 1624
+}

@@ -1,0 +1,26 @@
+{
+ "conjunto": "king_county",
+ "modelo": "LightGBM",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 2,
+ "params": {
+  "n_estimators": 75,
+  "learning_rate": 0.02271461417359821,
+  "num_leaves": 51,
+  "min_child_samples": 7,
+  "subsample": 0.6422232192514411,
+  "colsample_bytree": 0.5078256697317101,
+  "reg_lambda": 0.10824086644124471
+ },
+ "f1_interno_mejor": 0.5823272199875037,
+ "f1": 0.5474089251353931,
+ "accuracy": 0.6056622851365016,
+ "mae_ordinal": 0.4206268958543984,
+ "seg_busqueda": 101.35642269998789,
+ "seg_ajuste_final": 1.673379800049588,
+ "seg_inferencia": 0.11734299996169284,
+ "n_train": 4011,
+ "n_val": 989
+}

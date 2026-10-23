@@ -1,0 +1,134 @@
+[
+ {
+  "variable": "area_construida",
+  "tipo": "numérica",
+  "unidad": "m²",
+  "descripcion": "Área construida de la vivienda"
+ },
+ {
+  "variable": "area_catastral_terreno",
+  "tipo": "numérica",
+  "unidad": "m²",
+  "descripcion": "Área del terreno (en propiedad horizontal, la cuota del lote)"
+ },
+ {
+  "variable": "total_habitaciones",
+  "tipo": "numérica",
+  "unidad": "—",
+  "descripcion": "Número de habitaciones"
+ },
+ {
+  "variable": "total_banios",
+  "tipo": "numérica",
+  "unidad": "—",
+  "descripcion": "Número de baños"
+ },
+ {
+  "variable": "total_plantas",
+  "tipo": "numérica",
+  "unidad": "—",
+  "descripcion": "Pisos de la propia vivienda (1 en casi todos los apartamentos)"
+ },
+ {
+  "variable": "antiguedad",
+  "tipo": "numérica",
+  "unidad": "años",
+  "descripcion": "2026 − año de construcción registrado"
+ },
+ {
+  "variable": "planta_ubicacion",
+  "tipo": "numérica",
+  "unidad": "piso",
+  "descripcion": "Piso en que está la unidad (hasta 41)"
+ },
+ {
+  "variable": "altura",
+  "tipo": "numérica",
+  "unidad": "m",
+  "descripcion": "Altura registrada (3 m en el 99.7 % de las viviendas)"
+ },
+ {
+  "variable": "x_km",
+  "tipo": "espacial",
+  "unidad": "km",
+  "descripcion": "Coordenada este-oeste respecto al centro"
+ },
+ {
+  "variable": "y_km",
+  "tipo": "espacial",
+  "unidad": "km",
+  "descripcion": "Coordenada sur-norte respecto al centro"
+ },
+ {
+  "variable": "dist_centro_km",
+  "tipo": "espacial",
+  "unidad": "km",
+  "descripcion": "Distancia al centro histórico"
+ },
+ {
+  "variable": "knn8_log_area",
+  "tipo": "vecindad",
+  "unidad": "log m²",
+  "descripcion": "Área construida media (log) de los 8 edificios más cercanos"
+ },
+ {
+  "variable": "knn8_banios",
+  "tipo": "vecindad",
+  "unidad": "—",
+  "descripcion": "Baños medios de los 8 edificios más cercanos"
+ },
+ {
+  "variable": "knn8_habitaciones",
+  "tipo": "vecindad",
+  "unidad": "—",
+  "descripcion": "Habitaciones medias de los 8 edificios más cercanos"
+ },
+ {
+  "variable": "knn8_antiguedad",
+  "tipo": "vecindad",
+  "unidad": "años",
+  "descripcion": "Antigüedad media de los 8 edificios más cercanos"
+ },
+ {
+  "variable": "knn8_piso",
+  "tipo": "vecindad",
+  "unidad": "piso",
+  "descripcion": "Piso medio de los 8 edificios más cercanos"
+ },
+ {
+  "variable": "knn8_prop_PH",
+  "tipo": "vecindad",
+  "unidad": "proporción",
+  "descripcion": "Proporción de los 8 edificios más cercanos en propiedad horizontal"
+ },
+ {
+  "variable": "knn8_dist_km",
+  "tipo": "vecindad",
+  "unidad": "km",
+  "descripcion": "Distancia media a los 8 edificios más cercanos"
+ },
+ {
+  "variable": "tipo_vivienda",
+  "tipo": "categórica",
+  "unidad": "—",
+  "descripcion": "tv_1 VIS, tv_2 VIP, tv_3 no VIS, tv_4 no aplica"
+ },
+ {
+  "variable": "uso",
+  "tipo": "categórica",
+  "unidad": "—",
+  "descripcion": "Uso catastral (casa hasta 3 pisos, apartamentos en PH, ...)"
+ },
+ {
+  "variable": "condicion_predio",
+  "tipo": "categórica",
+  "unidad": "—",
+  "descripcion": "Régimen: NPH, propiedad horizontal (PH) o informal"
+ },
+ {
+  "variable": "estrato_num",
+  "tipo": "objetivo",
+  "unidad": "1–6",
+  "descripcion": "Estrato socioeconómico asignado (variable a predecir)"
+ }
+]

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# cachés y salidas pesadas que se regeneran con experimentos/ (no se versionan)
+resultados/cv5x5/cache/
+resultados/test/proba_test.npz
+resultados/externos/*/paquete.pkl
+data/externos/*/_cache/
+resultados/logs/
+book/_build/
+.claude/
+# documentos de trabajo internos (no forman parte del entregable)
+ESTADO_E4.md
+BASE_ENTREGABLES_PREVIOS.md
+# exportes de Scopus: sus términos no permiten redistribuir los registros (el cribado sí se versiona)
+literatura/exportes/

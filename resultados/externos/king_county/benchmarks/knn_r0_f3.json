@@ -1,0 +1,22 @@
+{
+ "conjunto": "king_county",
+ "modelo": "KNN",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 3,
+ "params": {
+  "n_neighbors": 78,
+  "weights": "uniform",
+  "p": 1
+ },
+ "f1_interno_mejor": 0.48212155369417076,
+ "f1": 0.493516330081934,
+ "accuracy": 0.5480673934588701,
+ "mae_ordinal": 0.5381565906838454,
+ "seg_busqueda": 11.17436629999429,
+ "seg_ajuste_final": 0.0731726000085473,
+ "seg_inferencia": 0.5230339999543503,
+ "n_train": 3991,
+ "n_val": 1009
+}

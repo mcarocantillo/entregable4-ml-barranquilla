@@ -1,0 +1,23 @@
+{
+ "conjunto": "king_county",
+ "modelo": "CatBoost",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 3,
+ "params": {
+  "iterations": 288,
+  "learning_rate": 0.07577856339161183,
+  "depth": 7,
+  "l2_leaf_reg": 3.525882465697752
+ },
+ "f1_interno_mejor": 0.5428357268367129,
+ "f1": 0.5717569924320368,
+ "accuracy": 0.6025768087215064,
+ "mae_ordinal": 0.42913776015857286,
+ "seg_busqueda": 473.63104730000487,
+ "seg_ajuste_final": 45.57167140004458,
+ "seg_inferencia": 0.04385969997383654,
+ "n_train": 3991,
+ "n_val": 1009
+}

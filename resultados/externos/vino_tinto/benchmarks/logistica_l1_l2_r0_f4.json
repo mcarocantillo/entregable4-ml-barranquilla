@@ -1,0 +1,21 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "Logística L1/L2",
+ "balanceo": "ninguno",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 4,
+ "params": {
+  "penalty": "l2",
+  "C": 0.2537815508265665
+ },
+ "f1_interno_mejor": 0.46081201909539066,
+ "f1": 0.4723984213735106,
+ "accuracy": 0.6081504702194357,
+ "mae_ordinal": 0.41379310344827586,
+ "seg_busqueda": 3.533135899982881,
+ "seg_ajuste_final": 0.0800625000265427,
+ "seg_inferencia": 0.013717399968300015,
+ "n_train": 1280,
+ "n_val": 319
+}

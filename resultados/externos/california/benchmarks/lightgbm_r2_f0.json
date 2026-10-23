@@ -1,0 +1,26 @@
+{
+ "conjunto": "california",
+ "modelo": "LightGBM",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 2,
+ "fold": 0,
+ "params": {
+  "n_estimators": 112,
+  "learning_rate": 0.06888003015023968,
+  "num_leaves": 34,
+  "min_child_samples": 9,
+  "subsample": 0.9206842524260341,
+  "colsample_bytree": 0.9705796400950163,
+  "reg_lambda": 0.15320631747886218
+ },
+ "f1_interno_mejor": 0.3953191994458252,
+ "f1": 0.40717332500418396,
+ "accuracy": 0.406288532675709,
+ "mae_ordinal": 1.0080147965474722,
+ "seg_busqueda": 142.6716996000032,
+ "seg_ajuste_final": 2.898592399957124,
+ "seg_inferencia": 0.3102999000111595,
+ "n_train": 3379,
+ "n_val": 1622
+}

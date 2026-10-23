@@ -1,0 +1,22 @@
+{
+ "conjunto": "king_county",
+ "modelo": "Árbol de decisión",
+ "balanceo": "smote",
+ "metodo": "Grid",
+ "repeticion": 2,
+ "fold": 1,
+ "params": {
+  "max_depth": 10,
+  "min_samples_leaf": 50,
+  "criterion": "entropy"
+ },
+ "f1_interno_mejor": 0.5155832817422793,
+ "f1": 0.4938765128289409,
+ "accuracy": 0.5403543307086615,
+ "mae_ordinal": 0.5374015748031497,
+ "seg_busqueda": 11.093194800021593,
+ "seg_ajuste_final": 0.4809421999962069,
+ "seg_inferencia": 0.025576499989256263,
+ "n_train": 3984,
+ "n_val": 1016
+}

@@ -1,0 +1,170 @@
+{
+ "version": "v2",
+ "params": {
+  "n_anclas": 16,
+  "ancho_banda": 1.375827946956159,
+  "k_anclas": 1,
+  "lam": 0.1161172824887235,
+  "peso_clase": "balanced",
+  "espacio": "variables"
+ },
+ "f1_busqueda_final": 0.6830767602824068,
+ "historial": [
+  {
+   "evaluacion": 1,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6731576152643244,
+   "f1_interno_sd": 0.06769481550960169
+  },
+  {
+   "evaluacion": 2,
+   "params": {
+    "n_anclas": 32,
+    "ancho_banda": 0.26468309821821084,
+    "k_anclas": 10,
+    "lam": 2.1368329072358767,
+    "peso_clase": "balanced",
+    "espacio": "probabilidades"
+   },
+   "f1_interno": 0.6721606113416467,
+   "f1_interno_sd": 0.06496934249079388
+  },
+  {
+   "evaluacion": 3,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.678032204286358,
+   "f1_interno_sd": 0.08252283502682244
+  },
+  {
+   "evaluacion": 4,
+   "params": {
+    "n_anclas": 18,
+    "ancho_banda": 1.2920467532058872,
+    "k_anclas": 1,
+    "lam": 0.26926469100861794,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6793091602857786,
+   "f1_interno_sd": 0.06762393750332764
+  },
+  {
+   "evaluacion": 5,
+   "params": {
+    "n_anclas": 32,
+    "ancho_banda": 1.5137088217756896,
+    "k_anclas": 2,
+    "lam": 0.02970972050398579,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6817034947304477,
+   "f1_interno_sd": 0.07640006027747974
+  },
+  {
+   "evaluacion": 6,
+   "params": {
+    "n_anclas": 6,
+    "ancho_banda": 3.888509710451303,
+    "k_anclas": 1,
+    "lam": 0.01097084845922152,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6697748853063394,
+   "f1_interno_sd": 0.07066771298889314
+  },
+  {
+   "evaluacion": 7,
+   "params": {
+    "n_anclas": 34,
+    "ancho_banda": 0.7580002458730783,
+    "k_anclas": 4,
+    "lam": 0.0020000459467654596,
+    "peso_clase": "balanced",
+    "espacio": "geografico"
+   },
+   "f1_interno": 0.6662719921261469,
+   "f1_interno_sd": 0.08229647233930289
+  },
+  {
+   "evaluacion": 8,
+   "params": {
+    "n_anclas": 77,
+    "ancho_banda": 0.3889419022296962,
+    "k_anclas": 1,
+    "lam": 0.01002190490515278,
+    "peso_clase": "ninguno",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6719832051733654,
+   "f1_interno_sd": 0.07999831037959065
+  },
+  {
+   "evaluacion": 9,
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 1.512804423376522,
+    "k_anclas": 4,
+    "lam": 0.12446863159549991,
+    "peso_clase": "ninguno",
+    "espacio": "geografico"
+   },
+   "f1_interno": 0.6694698056459485,
+   "f1_interno_sd": 0.06461139032760647
+  },
+  {
+   "evaluacion": 10,
+   "params": {
+    "n_anclas": 5,
+    "ancho_banda": 0.2674187150279702,
+    "k_anclas": 6,
+    "lam": 0.007789609113551905,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.668556807134403,
+   "f1_interno_sd": 0.07416382225532722
+  },
+  {
+   "evaluacion": 11,
+   "params": {
+    "n_anclas": 47,
+    "ancho_banda": 1.147559816313947,
+    "k_anclas": 9,
+    "lam": 0.020699579725171616,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6786944809044994,
+   "f1_interno_sd": 0.07074933964834436
+  },
+  {
+   "evaluacion": 12,
+   "params": {
+    "n_anclas": 16,
+    "ancho_banda": 1.375827946956159,
+    "k_anclas": 1,
+    "lam": 0.1161172824887235,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.6830767602824068,
+   "f1_interno_sd": 0.07678601086177339
+  }
+ ]
+}

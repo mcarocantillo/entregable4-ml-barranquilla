@@ -1,0 +1,22 @@
+{
+ "conjunto": "king_county",
+ "modelo": "SVM",
+ "balanceo": "class_weight",
+ "metodo": "Grid",
+ "repeticion": 2,
+ "fold": 4,
+ "params": {
+  "gamma": 0.03,
+  "n_components": 300,
+  "C": 1.0
+ },
+ "f1_interno_mejor": 0.5157414058331508,
+ "f1": 0.5297035500975059,
+ "accuracy": 0.5807106598984771,
+ "mae_ordinal": 0.4751269035532995,
+ "seg_busqueda": 112.64104040001985,
+ "seg_ajuste_final": 5.9732289999956265,
+ "seg_inferencia": 0.08873570000287145,
+ "n_train": 4015,
+ "n_val": 985
+}

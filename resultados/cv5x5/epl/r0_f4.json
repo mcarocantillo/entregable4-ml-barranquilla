@@ -1,0 +1,259 @@
+{
+ "repeticion": 0,
+ "fold": 4,
+ "semilla_particion": 42,
+ "params": {
+  "n_anclas": 17,
+  "ancho_banda": 0.7855393822453368,
+  "k_anclas": 10,
+  "lam": 0.24928244356451312,
+  "peso_clase": "balanced"
+ },
+ "f1_interno_mejor": 0.6802613054536414,
+ "historial": [
+  {
+   "evaluacion": 1,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6722336388137538,
+   "f1_interno_sd": 0.007343682035289503,
+   "segundos_acum": 347.2920204999973
+  },
+  {
+   "evaluacion": 2,
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 2.760069476697773,
+    "k_anclas": 7,
+    "lam": 0.679657809075816,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6407343097933346,
+   "f1_interno_sd": 0.03316170703672431,
+   "segundos_acum": 351.0068981999939
+  },
+  {
+   "evaluacion": 3,
+   "params": {
+    "n_anclas": 48,
+    "ancho_banda": 0.45042426126644386,
+    "k_anclas": 2,
+    "lam": 0.00541524411940254,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6421321071511087,
+   "f1_interno_sd": 0.032772807835945814,
+   "segundos_acum": 360.7610543000046
+  },
+  {
+   "evaluacion": 4,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6498072291101681,
+   "f1_interno_sd": 0.04364822452314859,
+   "segundos_acum": 370.6501528999943
+  },
+  {
+   "evaluacion": 5,
+   "params": {
+    "n_anclas": 51,
+    "ancho_banda": 3.1749772635079774,
+    "k_anclas": 2,
+    "lam": 0.10787149503650646,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6642605690348949,
+   "f1_interno_sd": 0.007063854624444287,
+   "segundos_acum": 375.42463210001006
+  },
+  {
+   "evaluacion": 6,
+   "params": {
+    "n_anclas": 51,
+    "ancho_banda": 0.25502132423011203,
+    "k_anclas": 7,
+    "lam": 5.3331307035942155,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6755872566588502,
+   "f1_interno_sd": 0.007059043626890912,
+   "segundos_acum": 380.56036380000296
+  },
+  {
+   "evaluacion": 7,
+   "params": {
+    "n_anclas": 29,
+    "ancho_banda": 0.37772765178476503,
+    "k_anclas": 10,
+    "lam": 9.26944777336064,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6732628246314105,
+   "f1_interno_sd": 0.009469621776580896,
+   "segundos_acum": 386.1668542000116
+  },
+  {
+   "evaluacion": 8,
+   "params": {
+    "n_anclas": 62,
+    "ancho_banda": 1.06345319758971,
+    "k_anclas": 7,
+    "lam": 0.4608800081005188,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.677079777572147,
+   "f1_interno_sd": 0.0070513129681857726,
+   "segundos_acum": 391.6754627000191
+  },
+  {
+   "evaluacion": 9,
+   "params": {
+    "n_anclas": 78,
+    "ancho_banda": 1.1048313714415223,
+    "k_anclas": 5,
+    "lam": 0.017290168616980614,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6661178482537822,
+   "f1_interno_sd": 0.012045209572201695,
+   "segundos_acum": 399.0103757000179
+  },
+  {
+   "evaluacion": 10,
+   "params": {
+    "n_anclas": 44,
+    "ancho_banda": 0.933578760107386,
+    "k_anclas": 2,
+    "lam": 4.633120894793308,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6748915480860599,
+   "f1_interno_sd": 0.008790898254217758,
+   "segundos_acum": 402.83662220000406
+  },
+  {
+   "evaluacion": 11,
+   "params": {
+    "n_anclas": 17,
+    "ancho_banda": 0.7855393822453368,
+    "k_anclas": 10,
+    "lam": 0.24928244356451312,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6802613054536414,
+   "f1_interno_sd": 0.010238886619223867,
+   "segundos_acum": 407.45812920000753
+  },
+  {
+   "evaluacion": 12,
+   "params": {
+    "n_anclas": 16,
+    "ancho_banda": 0.49527922506058736,
+    "k_anclas": 10,
+    "lam": 0.2276713383859453,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.675519732620609,
+   "f1_interno_sd": 0.01194052653125632,
+   "segundos_acum": 412.1282487999997
+  }
+ ],
+ "f1": {
+  "EPL": 0.6785783939435754,
+  "promedio_simple": 0.6756764285836937,
+  "pesos_error_global": 0.6614170754964951,
+  "stacking_lineal": 0.6842084765170063,
+  "sin_campo_local": 0.6736546657828101,
+  "sin_kl": 0.6727818418795163,
+  "sin_suavizado": 0.6791594439709954,
+  "pesos_clase_contrarios": 0.6724668305097529,
+  "sin_ajuste_cruzado": 0.6008046559353666
+ },
+ "metricas_EPL": {
+  "f1_macro": 0.6785783939435754,
+  "accuracy": 0.6910528917449332,
+  "balanced_accuracy": 0.6920229167807568,
+  "precision_macro": 0.6984747872806413,
+  "recall_macro": 0.6920229167807568,
+  "auc_ovr": 0.9462944167199673,
+  "log_loss": 0.6725024615319445,
+  "brier": 0.4080410083675098,
+  "ece": 0.04474237042237884,
+  "mae_ordinal": 0.3272367770637667,
+  "acc_pm1": 0.9822046465645081,
+  "kappa_cuadratico": 0.9168755855835592
+ },
+ "expertos": [
+  "KNN",
+  "Naive Bayes",
+  "Logística L1/L2",
+  "Árbol de decisión",
+  "Random Forest",
+  "XGBoost",
+  "SVM"
+ ],
+ "pesos_globales": [
+  0.08939092325904147,
+  0.07511467457639505,
+  0.1638084696130261,
+  0.03616125761079934,
+  0.4857256731718785,
+  0.14976067783642125,
+  3.832393243824957e-05
+ ],
+ "pesos_error_global": [
+  0.17019652438024344,
+  0.06414336399763462,
+  0.1797688560274177,
+  0.06771209501524739,
+  0.20714430246887697,
+  0.14570859847323228,
+  0.1653262596373476
+ ],
+ "n_anclas_reales": 17,
+ "n_iter": 14,
+ "historia_perdida": [
+  0.8162322995112673,
+  0.8155152783597464,
+  0.8144984402023955,
+  0.8131002246297385,
+  0.8112708471052874,
+  0.8090655862556904,
+  0.8067464857536915,
+  0.8047893757739156,
+  0.8035631899735629,
+  0.8029727922837462,
+  0.8027757239150315,
+  0.8027496450660763,
+  0.8027481983583772,
+  0.8027481158399321,
+  0.8027481004166064
+ ],
+ "dif_max_prob_expertos_vs_benchmark": {
+  "KNN": 2.979469304609239e-08,
+  "Naive Bayes": 2.9786222710548316e-08,
+  "Logística L1/L2": 2.978451141277816e-08,
+  "Árbol de decisión": 2.9467464801591348e-08,
+  "Random Forest": 2.9778330468133163e-08,
+  "XGBoost": 0.0,
+  "SVM": 2.9789781197386844e-08
+ },
+ "seg_busqueda": 412.12847970001167,
+ "seg_ajuste_final": 200.04788240001653,
+ "seg_inferencia": 1.2610658000048716,
+ "n_train": 7978,
+ "n_val": 2023,
+ "presupuesto": 12,
+ "tam_bloque_km": 1.0,
+ "n_pliegues_cruzados": 5
+}

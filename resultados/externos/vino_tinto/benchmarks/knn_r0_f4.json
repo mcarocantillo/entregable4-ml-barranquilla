@@ -1,0 +1,22 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "KNN",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 4,
+ "params": {
+  "n_neighbors": 37,
+  "weights": "distance",
+  "p": 1
+ },
+ "f1_interno_mejor": 0.5258483935971413,
+ "f1": 0.5326024764282843,
+ "accuracy": 0.6206896551724138,
+ "mae_ordinal": 0.47962382445141066,
+ "seg_busqueda": 2.687200099986512,
+ "seg_ajuste_final": 0.04246379999676719,
+ "seg_inferencia": 0.043868099979590625,
+ "n_train": 1280,
+ "n_val": 319
+}

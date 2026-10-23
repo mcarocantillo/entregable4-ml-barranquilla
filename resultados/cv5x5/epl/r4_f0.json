@@ -1,0 +1,261 @@
+{
+ "repeticion": 4,
+ "fold": 0,
+ "semilla_particion": 46,
+ "params": {
+  "n_anclas": 32,
+  "ancho_banda": 2.1973009439095867,
+  "k_anclas": 3,
+  "lam": 0.16061419479340924,
+  "peso_clase": "ninguno"
+ },
+ "f1_interno_mejor": 0.6583340590688809,
+ "historial": [
+  {
+   "evaluacion": 1,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6500468725119773,
+   "f1_interno_sd": 0.03216259321249593,
+   "segundos_acum": 273.5632055000169
+  },
+  {
+   "evaluacion": 2,
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 2.760069476697773,
+    "k_anclas": 7,
+    "lam": 0.679657809075816,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6536210828258316,
+   "f1_interno_sd": 0.029100826048911527,
+   "segundos_acum": 276.7383203000063
+  },
+  {
+   "evaluacion": 3,
+   "params": {
+    "n_anclas": 48,
+    "ancho_banda": 0.45042426126644386,
+    "k_anclas": 2,
+    "lam": 0.00541524411940254,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6572869193109492,
+   "f1_interno_sd": 0.018447851788572417,
+   "segundos_acum": 281.7485551999998
+  },
+  {
+   "evaluacion": 4,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6566785842505115,
+   "f1_interno_sd": 0.025512130648632562,
+   "segundos_acum": 289.96017049998045
+  },
+  {
+   "evaluacion": 5,
+   "params": {
+    "n_anclas": 47,
+    "ancho_banda": 0.9765008903405068,
+    "k_anclas": 1,
+    "lam": 0.07410437269556738,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6499476017961054,
+   "f1_interno_sd": 0.02168886647297752,
+   "segundos_acum": 293.5514600999886
+  },
+  {
+   "evaluacion": 6,
+   "params": {
+    "n_anclas": 59,
+    "ancho_banda": 0.2532334594454628,
+    "k_anclas": 6,
+    "lam": 4.447811229602721,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.65254926352658,
+   "f1_interno_sd": 0.02796491205710889,
+   "segundos_acum": 297.33618029998615
+  },
+  {
+   "evaluacion": 7,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 0.2706560355274543,
+    "k_anclas": 2,
+    "lam": 0.020212795271314848,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6554431756676591,
+   "f1_interno_sd": 0.01989151100985408,
+   "segundos_acum": 301.2991407000227
+  },
+  {
+   "evaluacion": 8,
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 1.1865826256139194,
+    "k_anclas": 1,
+    "lam": 0.002888960051583637,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6425814924904808,
+   "f1_interno_sd": 0.035907983741858135,
+   "segundos_acum": 304.69833009998547
+  },
+  {
+   "evaluacion": 9,
+   "params": {
+    "n_anclas": 9,
+    "ancho_banda": 0.9413498721738862,
+    "k_anclas": 4,
+    "lam": 4.099825151791979,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.652275240175153,
+   "f1_interno_sd": 0.029000726769880723,
+   "segundos_acum": 308.04302580002695
+  },
+  {
+   "evaluacion": 10,
+   "params": {
+    "n_anclas": 80,
+    "ancho_banda": 0.38676961889138506,
+    "k_anclas": 10,
+    "lam": 0.04058860069169447,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6553312914290307,
+   "f1_interno_sd": 0.02643468903547141,
+   "segundos_acum": 316.21268559998134
+  },
+  {
+   "evaluacion": 11,
+   "params": {
+    "n_anclas": 38,
+    "ancho_banda": 2.2205452418353073,
+    "k_anclas": 4,
+    "lam": 0.1418048674500759,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6575825633572827,
+   "f1_interno_sd": 0.03636678622375801,
+   "segundos_acum": 320.1492598000332
+  },
+  {
+   "evaluacion": 12,
+   "params": {
+    "n_anclas": 32,
+    "ancho_banda": 2.1973009439095867,
+    "k_anclas": 3,
+    "lam": 0.16061419479340924,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6583340590688809,
+   "f1_interno_sd": 0.035633000155614825,
+   "segundos_acum": 323.81211080000503
+  }
+ ],
+ "f1": {
+  "EPL": 0.580341839225787,
+  "promedio_simple": 0.5825500100895221,
+  "pesos_error_global": 0.5874180532030602,
+  "stacking_lineal": 0.5724260670118126,
+  "sin_campo_local": 0.5897336681087871,
+  "sin_kl": 0.5717877843407152,
+  "sin_suavizado": 0.5806589865175362,
+  "pesos_clase_contrarios": 0.5732527782686866,
+  "sin_ajuste_cruzado": 0.5499431861299456
+ },
+ "metricas_EPL": {
+  "f1_macro": 0.580341839225787,
+  "accuracy": 0.65673828125,
+  "balanced_accuracy": 0.6043063525179136,
+  "precision_macro": 0.6362471218407332,
+  "recall_macro": 0.6043063525179136,
+  "auc_ovr": 0.9155340569548196,
+  "log_loss": 0.768140387580418,
+  "brier": 0.4625389590235003,
+  "ece": 0.043464816061226784,
+  "mae_ordinal": 0.353515625,
+  "acc_pm1": 0.99072265625,
+  "kappa_cuadratico": 0.9104878786990098
+ },
+ "expertos": [
+  "KNN",
+  "Naive Bayes",
+  "Logística L1/L2",
+  "Árbol de decisión",
+  "Random Forest",
+  "XGBoost",
+  "SVM"
+ ],
+ "pesos_globales": [
+  0.16126728529524767,
+  9.999999999983151e-13,
+  0.26171262167767995,
+  1.7677600750230785e-05,
+  0.223682402124573,
+  0.35332001329974905,
+  9.999999999983151e-13
+ ],
+ "pesos_error_global": [
+  0.16820734491645428,
+  0.04483053298841601,
+  0.18488978023433297,
+  0.10778231467623539,
+  0.19954358028345454,
+  0.14385820078450823,
+  0.15088824611659865
+ ],
+ "n_anclas_reales": 32,
+ "n_iter": 16,
+ "historia_perdida": [
+  0.698580985280481,
+  0.6981997280298993,
+  0.6976397202270591,
+  0.696825924169809,
+  0.695662477499872,
+  0.6940402041845893,
+  0.6918633975439032,
+  0.6891100961220512,
+  0.685928217538161,
+  0.6827161446370923,
+  0.6800513691925315,
+  0.6783762803669372,
+  0.6776718524411008,
+  0.677519942735026,
+  0.6775117577619775,
+  0.6775116005094117,
+  0.6775115865374216
+ ],
+ "dif_max_prob_expertos_vs_benchmark": {
+  "KNN": 2.978741631132209e-08,
+  "Naive Bayes": 2.9791846545279554e-08,
+  "Logística L1/L2": 2.980179214517875e-08,
+  "Árbol de decisión": 2.7166742855300186e-08,
+  "Random Forest": 2.976787372155343e-08,
+  "XGBoost": 0.0,
+  "SVM": 2.9776051402308212e-08
+ },
+ "seg_busqueda": 323.812325100007,
+ "seg_ajuste_final": 140.74963949999074,
+ "seg_inferencia": 0.9807187999831513,
+ "n_train": 7953,
+ "n_val": 2048,
+ "presupuesto": 12,
+ "tam_bloque_km": 1.0,
+ "n_pliegues_cruzados": 5
+}

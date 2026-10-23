@@ -1,0 +1,22 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "Árbol de decisión",
+ "balanceo": "smote",
+ "metodo": "Grid",
+ "repeticion": 2,
+ "fold": 1,
+ "params": {
+  "max_depth": 20,
+  "min_samples_leaf": 5,
+  "criterion": "entropy"
+ },
+ "f1_interno_mejor": 0.43600113532101553,
+ "f1": 0.5078066332916145,
+ "accuracy": 0.603125,
+ "mae_ordinal": 0.465625,
+ "seg_busqueda": 3.4467939999885857,
+ "seg_ajuste_final": 0.1327445000060834,
+ "seg_inferencia": 0.012426299974322319,
+ "n_train": 1279,
+ "n_val": 320
+}

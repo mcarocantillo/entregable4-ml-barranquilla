@@ -1,0 +1,79 @@
+base,cadena,registro,relevante,tipo,motivo
+Scopus,C1,"Granados et al. (2022) Feasibility analysis ... solar photovoltaic ... Colombian residential sector",no,—,Costos de energía solar por estrato; el estrato es contexto
+Scopus,C1,"Cantillo-García, Guzman y Arellana (2019) Socioeconomic strata as proxy variable for household income ... Barranquilla",sí,aplicación cercana,"Logit ordenado con el estrato como variable dependiente, pero con variables del hogar (encuesta de movilidad), no catastrales; sin ensamble ni ponderación local"
+Scopus,C1,"Rivera, Vélez y Arteta (2026) Data-Driven Zonation for Seismic Exposure Modeling via Machine Learning",no,—,Zonificación no supervisada; el estrato es entrada
+Scopus,C1,"Ardila Chávarro (2024) Crime and economic factors in Medellín",no,—,Predice crimen; estratos 1–2 como predictores
+Scopus,C1,"Chica-Olmo, Sánchez y Sepúlveda-Murillo (2020) Assessing Colombia's policy of socio-economic stratification",sí,aplicación cercana (contexto),"Evalúa si el estrato refleja la calidad de vida (logit multinivel, Medellín); no predice el estrato de viviendas"
+Scopus,C1,"García (2022) Growing up in unequal societies: Colombian children's interpretations of socioeconomic stratification",no,—,Estudio etnográfico
+Scopus,C1,"Srinivasan, Vaz y Thomas (2010) Prevalence of health related disability ... Bangaluru",no,—,Salud; «strata» en otro sentido
+Scopus,C1,"Yan, Ma y Wang (2026) Assessing human-scale green equity in the 15-minute city ... Chengdu",no,—,Precio de vivienda como proxy socioeconómico; random forest y SHAP
+Scopus,C1,"Larco et al. (2026) A Machine Learning Approach for Poverty Classification ... Ecuador",no,—,"Estratos de pobreza no supervisados (mezcla gaussiana) con el censo, no el estrato administrativo"
+Scopus,C1,"Daniel, Maniar y Ganapati (1984) An approach to leprosy work in south Bombay",no,—,Salud
+Scopus,C2,"Zhao et al. (2026) Cosine Similarity Distillation Vision Mixture-of-Experts for ... Urban Physical Examinations",no,—,Mezcla de expertos neuronal para imágenes
+Scopus,C2,"Lasota et al. (2013) Investigation of mixture of experts applied to residential premises valuation",sí,método afín,"Mezcla de expertos con datos catastrales, pero para avalúo (regresión) y con compuerta neuronal o gaussiana"
+Scopus,C2,"Satyanarayana et al. (2023) Alzheimer's Disease Detection Using Ensemble of Classifiers",no,—,Selección dinámica en medicina
+Scopus,C2,"Du, Yan y Xu (2026) A Mixture of Experts Method ... Multi-Residential Load Forecasting",no,—,Mezcla de expertos neuronal (series de tiempo)
+Scopus,C2,"ICONIP 2025, LNCS 16312 (actas)",no,—,Actas de congreso
+Scopus,C2,"Graczyk et al. (2010) Application of mixture of experts to construct real estate appraisal models",sí,método afín,"Mezcla de expertos con datos catastrales y SIG, para avalúo (regresión); pruebas no paramétricas"
+Scopus,C2,"Li et al. (2026) External Data-Enhanced Meta-Representation for Adaptive Probabilistic Load Forecasting",no,—,Mezcla de expertos neuronal (carga eléctrica)
+Scopus,C2,"Ferrari y Milioni (2011) Choices and pitfalls concerning mixture-of-experts modeling",no,—,Metodológico en regresión (Boston housing)
+Scopus,C2,"ICONIP 2025, CCIS 2754 (actas)",no,—,Actas de congreso
+Scopus,C2,"ICONIP 2025, LNCS 16310 (actas)",no,—,Actas de congreso
+Scopus,C2,"Lim et al. (2026) Toward Resilient Urban Systems: A Multimodal Geospatial AI Framework",no,—,Mezcla de expertos neuronal (desastres)
+Scopus,C2,"Li et al. (2026) UrbanExpert: Task-Conditioned Multi-Modal Fusion via Semantic Expert Routing for Urban Socioeconomic Prediction",sí,método afín,"Predicción socioeconómica urbana por regiones con mezcla de expertos neuronal multimodal; no viviendas ni estrato"
+Scopus,C2,"ACM Web Conference 2023 (actas)",no,—,Actas de congreso
+Scopus,C2,"Santarcangelo y Zhang (2015) Kernel-based mixture of experts models for linear regression",no,—,Regresión (Boston housing)
+Scopus,C2,"Niu et al. (2026) Spatially Validated Graph-Based Mixture-of-Experts ... Heavy Metal Contamination",sí,método afín,"Mezcla de expertos (grafo, neuronal) con validación por bloques espaciales y F1 macro; suelos, no vivienda"
+Scopus,C2,"Jiang, Conglian y Qinghua (2018) Model selection for the localized mixture of experts models",no,—,Selección de modelos (EM) en regresión
+Scopus,C3,"Zeng et al. (2026) Online Spatiotemporal Ensemble Learning for Load Forecasting Against Anomalous Events",sí,método afín (el más cercano en la regla),"Combina expertos con programación convexa en línea resuelta por gradiente exponenciado; espaciotemporal, en línea, para pronóstico de carga, con expertos neuronales"
+Scopus,C4,"Guo et al. (2024) An approach for predicting landslide susceptibility and evaluating predisposing factors",sí,método afín,"Stacking de redes + regresión geográficamente ponderada profunda (GW-DNN); deslizamientos"
+Scopus,C4,"Li et al. (2022) An innovative multi-source precipitation merging method with the identification of rain and no rain",sí,método afín,"Fusión de fuentes con regresión logística geográficamente ponderada (GWLR) + GWR; precipitación"
+Scopus,C4,"Grekousis (2025) Geographical-XGBoost",sí,método afín,"Modelos locales + global con pesos espaciales; regresión (base del XGBoost geográfico del E2/E3)"
+Scopus,C4,"Zhao et al. (2020) Analysis of precipitation characteristics in Taihu Lake basin based on MSWEP",no,—,Análisis descriptivo de precipitación
+Scopus,C4,"Gianquintieri et al. (2024) Implementation of a GEOAI model ... PM2.5",sí,método afín,"Cadena de selección de variables + MGWR + random forest; contaminación"
+Scopus,C4,"Bozorgi et al. (2021) The leading neighborhood-level predictors of drug overdose",sí,método afín,"Ensamble que combina predicciones de dominios con GWR; validación espacial"
+Scopus,C4,"Liu (2024) An ensemble framework for explainable geospatial machine learning models",sí,método afín (el más cercano en la idea),"Ensamble con ponderación espacial local + explicabilidad, regresión y clasificación en datos sintéticos"
+Scopus,C5,"Zhang et al. (2026) ... Machine-Learning-Based Dynamic Ensemble Selection Algorithm (FCH-DESA)",sí,método afín,"Selección dinámica de regresores localmente competentes (altura del dosel); ganancia moderada sobre ensambles"
+Scopus,C5,"Nour, Senturk y Polat (2023) Diagnosis and classification of Parkinson's disease using ensemble learning",no,—,Selección dinámica en EEG
+Scopus,C5,"Kianifar, Motallebi y Bardsiri (2023) Long-term traffic pattern forecasting using dynamic classifier selection",sí,método afín,Región de competencia con una medida de proximidad nueva (tráfico)
+Scopus,C5,"Yu, Pradhan y Wang (2025) A comparative study of various combination strategies for landslide susceptibility mapping",sí,método afín,"Compara máximo, media, voto, stacking y selección dinámica en mapas de susceptibilidad"
+Scopus,C5,"Souza et al. (2024) A dynamic multiple classifier system using graph neural network",sí,método afín,Selección dinámica con meta-aprendiz neuronal (grafo)
+Scopus,C5,"Matougui, Djerbal y Bahar (2024) A comparative study of heterogeneous and homogeneous ensemble approaches for landslide susceptibility",sí,método afín,Meta-selección dinámica frente a stacking y voto (deslizamientos)
+Scopus,C5,"Ye et al. (2027) Spatiotemporal resampling-based dynamic ensemble selection for nonstationary streams",no,—,Flujos de datos con deriva
+Scopus,C5,"Cao et al. (2024) Underwater Target Recognition Based on Dynamic Ensemble of Random Forest",no,—,Acústica submarina
+Scopus,C5,"Wen et al. (2024) Chemical space deconstruction-based dynamic model ensemble architecture",sí,método afín,Selección dinámica en un espacio aprendido (mapa autoorganizado)
+Scopus,C5,"Aziz et al. (2025) An interpretable dynamic ensemble selection multiclass imbalance approach ... crash injury severity",sí,método afín,"Selección dinámica para clasificación multiclase desbalanceada, con SHAP"
+Google Scholar,C1,"Vargas-Calderón y Camargo (2022) Towards robust and speculation-reduction real estate pricing models",sí,aplicación cercana (contexto),"XGBoost para precios en Bogotá; el estrato es variable de entrada, no objetivo"
+Google Scholar,C1,"Marinelli et al. (2026) Unequal changes in commuting patterns across socio-economic strata",no,—,Movilidad; el estrato agrupa
+Google Scholar,C1,"Guarin, Vélez y Posso (2023) Reparations as Development?",no,—,Economía; random forest con el estrato como control
+Google Scholar,C1,"Sánchez-Céspedes et al. (2026) ... dynamic updating of urban cadastral values using machine learning and bootstrap",sí,aplicación cercana (contexto),Aprendizaje automático sobre valores catastrales en Colombia; no predice el estrato
+Google Scholar,C1,"Solano Meza et al. (2020) ... critical zones on the generation of solid waste",no,—,Residuos; estrato como variable
+Google Scholar,C1,"Sandoval-Pineda, Pedraza y Darghan (2022) Macroscopic spatial analysis ... traffic accidents in Bogotá",no,—,Accidentes
+Google Scholar,C1,"Guarin Galeano (2022) Essays on the Economic Impacts of Redistributive Policies",no,—,Tesis de economía (dos versiones)
+Google Scholar,C1,"Salazar Flórez et al. (2025) Spatio-temporal analysis of dengue, chikungunya and Zika in Medellín",no,—,Epidemiología
+Google Scholar,C1,"Moreno, Análisis de la proximidad peatonal residencial",no,—,Movilidad peatonal
+Google Scholar,C1,"Nuñez, The cost of avoiding crime: the case of Bogota",no,—,Economía del crimen
+Google Scholar,C1,"Gañan Cardenas, Spatiotemporal forecasting of PM2.5 in Medellín",no,—,Calidad del aire
+Google Scholar,C2,"Sadeghi Naieni Fard et al. (2026) Geographically weighted Machine Learning for Spatial Prediction of Cancer Prevalence",sí,método afín,Aprendizaje automático geográficamente ponderado (regresión)
+Google Scholar,C2,"(12 registros restantes: salud, globos virtuales, ordenamiento urbano, temperatura superficial, PM2.5)",no,—,Sin relación con el método ni con el problema
+Google Scholar,C3,"Zhou y Lin (2026) When Does Dynamic Ensembling Pay Off? Diagnosing Regionwise Gains in Regression under Distribution Shift (arXiv 2608.18330)",sí,método afín (el más cercano en la idea),"Combinación convexa por regiones de un grupo de modelos frente a la mejor mezcla fija; diagnostica cuándo paga según el desplazamiento; regresión; compara con gradiente exponenciado"
+Google Scholar,C3,"Jian et al. (2024) OEC: an online ensemble classifier for mining data streams with noisy labels",sí,método afín,"Pesos de clasificadores base aprendidos con gradiente exponenciado normalizado, en línea y globales"
+Google Scholar,C3,"Huang, Yuan y Yang (2026) Learning from Yesterday's Error ... Traffic Demand Prediction (arXiv 2602.21757)",sí,método afín,"Pesos de un ensamble por región actualizados con gradiente exponenciado, en línea (series de tiempo)"
+Google Scholar,C3,"O'Donncha et al. (2019) Ensemble model aggregation using a computationally lightweight machine-learning model to forecast ocean waves",sí,método afín,"Agregación de miembros de un ensamble con gradiente exponenciado (pronóstico de oleaje)"
+Google Scholar,C3,"Ratliff y Bagnell (2007) Imitation learning for locomotion and manipulation",no,—,Gradiente exponenciado funcional en robótica
+Google Scholar,C3,"Mohammed et al. (2024) Medical image classifications using convolutional neural networks: A survey",no,—,Revisión de redes convolucionales
+Google Scholar,C3,"Pourhasan y Fathi (2026) An edge-optimized dual-teacher knowledge distillation framework",no,—,Ponderación de pérdidas en destilación neuronal
+Google Scholar,C3,"Li et al. A Survey on Intelligent Optimization-Driven Data Stream Ensemble Classification (SSRN)",no,—,Revisión de ensambles en flujos de datos
+Google Scholar,C3,"Benjamin et al. (2024) Continual learning with the neural tangent ensemble",no,—,Aprendizaje continuo neuronal
+Google Scholar,C3,"Sajjad y Sobhi (2026) The quantum-inspired adaptive superposition optimization for neural network training",no,—,Optimización de redes neuronales
+Google Scholar,C4,"Liu, Kounadi y Zurita-Milla (2022) Incorporating spatial autocorrelation in machine learning models using spatial lag and eigenvector spatial filtering features",sí,método afín,Rezagos espaciales como variables (como la vecindad física del E2/E3)
+Google Scholar,C4,"Shi et al. (2026) Estimating global site-level net ecosystem exchange with a geographically weighted XGBoost framework",sí,método afín,XGBoost geográficamente ponderado
+Google Scholar,C4,"Liu et al. (2025) Spatially Varying Impacts ... A Geographically Weighted Machine Learning Approach",sí,método afín,Random forest geográficamente ponderado
+Google Scholar,C4,"Hine, Millard y Kanfer (2013) A comparison of data mining and spatial techniques: an application to property data",sí,método afín,Stacking frente a kriging y GWR con datos de propiedades
+Google Scholar,C4,"(6 de los 10 primeros: valuación en Tesalónica, suelos, accidentes, precipitación, salud ecosistémica, COVID-19)",no,—,GWR o ensambles en otras aplicaciones sin regla de combinación local
+Google Scholar,C5,"Li et al. (2020) A robust dynamic classifier selection approach for hyperspectral images",sí,método afín,Selección dinámica con información espacial-espectral
+Google Scholar,C5,"Wan et al. (2026) Research on an improved multi-model dynamic fusion classification technique",sí,método afín,Fusión dinámica ponderada de modelos
+Google Scholar,C5,"(8 de los 10 primeros: selección dinámica en imágenes, revisiones, rechazo, contaminación)",no,—,Selección dinámica en otros dominios
+Google Scholar,C6,"Arias Cupitra y Moreno Moreno (2025) Determinación de zonas homogéneas físicas urbanas mediante inteligencia artificial: Entrerríos",sí,aplicación cercana,"Zonas homogéneas físicas (primer paso de la metodología del DANE) con IA; no predice el estrato de viviendas"
+Google Scholar,C6,"Aldana Urrea (2021) Calificación de construcciones mediante ... fotografías de fachadas",sí,aplicación cercana (contexto),"Calificación de construcciones (insumo catastral) con IA; no el estrato"
+Google Scholar,C6,"(8 de los 10 primeros: tesis de avalúo y precio de vivienda en Colombia con el estrato como variable de entrada)",no,—,El estrato es entrada del modelo de precios

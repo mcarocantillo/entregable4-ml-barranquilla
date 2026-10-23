@@ -1,0 +1,21 @@
+{
+ "conjunto": "california",
+ "modelo": "Logística L1/L2",
+ "balanceo": "ninguno",
+ "metodo": "Bayesiana",
+ "repeticion": 2,
+ "fold": 4,
+ "params": {
+  "penalty": "l1",
+  "C": 9.013186751477152
+ },
+ "f1_interno_mejor": 0.411437932431497,
+ "f1": 0.44573313538245724,
+ "accuracy": 0.44814340588988477,
+ "mae_ordinal": 0.7528809218950064,
+ "seg_busqueda": 12.591686900006607,
+ "seg_ajuste_final": 0.6664375999826007,
+ "seg_inferencia": 0.015145400015171617,
+ "n_train": 4220,
+ "n_val": 781
+}

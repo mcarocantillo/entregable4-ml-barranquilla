@@ -1,0 +1,26 @@
+{
+ "openml_id": 40691,
+ "nombre_openml": "wine-quality-red",
+ "version": "1",
+ "url": "https://www.openml.org/d/40691",
+ "licencia": "public",
+ "descargado": "2026-10-23",
+ "filas": 1599,
+ "columnas": [
+  "fixed_acidity",
+  "volatile_acidity",
+  "citric_acid",
+  "residual_sugar",
+  "chlorides",
+  "free_sulfur_dioxide",
+  "total_sulfur_dioxide",
+  "density",
+  "pH",
+  "sulphates",
+  "alcohol",
+  "class"
+ ],
+ "objetivo_openml": [
+  "class"
+ ]
+}

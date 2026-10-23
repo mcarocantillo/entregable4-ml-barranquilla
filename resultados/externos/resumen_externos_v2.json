@@ -1,0 +1,1328 @@
+{
+ "king_county": {
+  "media": {
+   "KNN": 0.502865601119503,
+   "Naive Bayes": 0.4639734186828497,
+   "Logística L1/L2": 0.5230515941470065,
+   "Árbol de decisión": 0.46361623480058956,
+   "Random Forest": 0.5686749427536651,
+   "XGBoost": 0.5525380014980659,
+   "SVM": 0.5299883182066583,
+   "LightGBM": 0.569816561479053,
+   "CatBoost": 0.5683976783554741,
+   "EPL (original)": 0.5703604976596436,
+   "[solo geografico]": 0.5725281709345132,
+   "[solo variables]": 0.5695454923762896,
+   "[solo probabilidades]": 0.5684380156737663
+  },
+  "sd": {
+   "KNN": 0.012294038893359904,
+   "Naive Bayes": 0.030297819425033068,
+   "Logística L1/L2": 0.015595011184334592,
+   "Árbol de decisión": 0.048448799159532284,
+   "Random Forest": 0.02440339484378504,
+   "XGBoost": 0.0261211515467652,
+   "SVM": 0.015038537881173174,
+   "LightGBM": 0.027178537435189314,
+   "CatBoost": 0.016817986519149248,
+   "EPL (original)": 0.026383087977556088,
+   "[solo geografico]": 0.02466936891971469,
+   "[solo variables]": 0.022675826679337957,
+   "[solo probabilidades]": 0.024237489914264117
+  },
+  "espacio_elegido": {
+   "variables": 9,
+   "geografico": 3,
+   "probabilidades": 3
+  },
+  "friedman": {
+   "chi2": 114.0545454545454,
+   "p": 2.1928663561654158e-20,
+   "rangos": {
+    "LightGBM": 2.6,
+    "Random Forest": 2.6,
+    "CatBoost": 2.6,
+    "EPL (original)": 2.8,
+    "XGBoost": 4.8,
+    "SVM": 6.4,
+    "Logística L1/L2": 6.8,
+    "KNN": 7.8,
+    "Árbol de decisión": 9.2,
+    "Naive Bayes": 9.4
+   },
+   "cd": 3.4975837934984835
+  },
+  "nemenyi_p_epl": {
+   "KNN": 0.00026173435532517164,
+   "Naive Bayes": 1.06463764248943e-07,
+   "Logística L1/L2": 0.011074879568204077,
+   "Árbol de decisión": 3.1707892778065627e-07,
+   "Random Forest": 0.9999999963090235,
+   "XGBoost": 0.7296929681434914,
+   "SVM": 0.037595232786175825,
+   "LightGBM": 0.9999999963090235,
+   "CatBoost": 0.9999999963090235,
+   "EPL (original)": 1.0
+  },
+  "epl_v2_vs_rivales": [
+   {
+    "rival": "KNN",
+    "media_rival": 0.502865601119503,
+    "dif_media": 0.06749489654014049,
+    "IC95_BCa": [
+     0.0500681230940351,
+     0.08483002373381567
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 3.3999102085263417,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.004313661363862171,
+    "delta_cliff": 1.0,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.9132363466771471,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.00962513037748244,
+     "asimetria": 0.003372699927158847,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.025881968183173027
+   },
+   {
+    "rival": "Naive Bayes",
+    "media_rival": 0.4639734186828497,
+    "dif_media": 0.10638707897679399,
+    "IC95_BCa": [
+     0.08630301687184061,
+     0.12178171853717605
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 5.384403244030944,
+    "t_NB_gl": 14,
+    "t_NB_p": 9.628147252547754e-05,
+    "delta_cliff": 1.0,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.0299729580539383,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.00786445494602849,
+     "asimetria": -0.6728465173774547,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.0006739703076783427
+   },
+   {
+    "rival": "Logística L1/L2",
+    "media_rival": 0.5230515941470065,
+    "dif_media": 0.04730890351263688,
+    "IC95_BCa": [
+     0.039958208501257864,
+     0.05500138406601841
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 5.541425210035716,
+    "t_NB_gl": 14,
+    "t_NB_p": 7.265272594284254e-05,
+    "delta_cliff": 0.84,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.1183341541330694,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.005099246632871391,
+     "asimetria": 0.20397132923935038,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.0005812218075427403
+   },
+   {
+    "rival": "Árbol de decisión",
+    "media_rival": 0.46361623480058956,
+    "dif_media": 0.106744262859054,
+    "IC95_BCa": [
+     0.09349506711252711,
+     0.1275986783833417
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 5.697695911523431,
+    "t_NB_gl": 14,
+    "t_NB_p": 5.5080496169088245e-05,
+    "delta_cliff": 1.0,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.2062725900532993,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.00041738893347881414,
+     "asimetria": 1.1989073224883053,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.0004957244655217942
+   },
+   {
+    "rival": "Random Forest",
+    "media_rival": 0.5686749427536651,
+    "dif_media": 0.0016855549059784814,
+    "IC95_BCa": [
+     -0.004851213934081261,
+     0.008727556654633924
+    ],
+    "pliegues_a_favor": 6,
+    "n_pliegues": 15,
+    "wilcoxon_W": 54.0,
+    "wilcoxon_p": 0.7322308100644752,
+    "t_NB": 0.21783528990594228,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.8307004877548089,
+    "delta_cliff": 0.04,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.12258276503650588,
+    "bayes": {
+     "P(EPL peor)": 0.00094,
+     "P(equivalentes)": 0.99128,
+     "P(EPL mejor)": 0.00778
+    },
+    "supuestos": {
+     "shapiro_p": 0.021039686320985438,
+     "asimetria": 0.2873093729426605,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "XGBoost",
+    "media_rival": 0.5525380014980659,
+    "dif_media": 0.017822496161577807,
+    "IC95_BCa": [
+     0.011580415728977542,
+     0.0247147150631563
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 2.3569206345954465,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.03351821694470838,
+    "delta_cliff": 0.44,
+    "delta_magnitud": "mediano",
+    "d_cohen_pareada": 1.3263133282263675,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.04758,
+     "P(EPL mejor)": 0.95242
+    },
+    "supuestos": {
+     "shapiro_p": 0.06980046996401498,
+     "asimetria": 0.3718081016878855,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.1340728677788335
+   },
+   {
+    "rival": "SVM",
+    "media_rival": 0.5299883182066583,
+    "dif_media": 0.0403721794529853,
+    "IC95_BCa": [
+     0.027608133839180794,
+     0.05191064414224068
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006225481353791476,
+    "t_NB": 2.9206610202167713,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.011176138724020672,
+    "delta_cliff": 0.76,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.6435477637581233,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 2e-05,
+     "P(EPL mejor)": 0.99998
+    },
+    "supuestos": {
+     "shapiro_p": 0.11462656267963156,
+     "asimetria": -0.21325408182658676,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.005602933218412328,
+    "t_NB_p_holm": 0.05588069362010336
+   },
+   {
+    "rival": "LightGBM",
+    "media_rival": 0.569816561479053,
+    "dif_media": 0.0005439361805905429,
+    "IC95_BCa": [
+     -0.005604830434532074,
+     0.009353365938084083
+    ],
+    "pliegues_a_favor": 6,
+    "n_pliegues": 15,
+    "wilcoxon_W": 48.0,
+    "wilcoxon_p": 0.4937736645081061,
+    "t_NB": 0.06472598372279426,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.9493073212950175,
+    "delta_cliff": 0.04,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.03642334562904793,
+    "bayes": {
+     "P(EPL peor)": 0.00596,
+     "P(equivalentes)": 0.99244,
+     "P(EPL mejor)": 0.0016
+    },
+    "supuestos": {
+     "shapiro_p": 0.0006004963782262718,
+     "asimetria": 0.9327015041631557,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "CatBoost",
+    "media_rival": 0.5683976783554741,
+    "dif_media": 0.0019628193041695496,
+    "IC95_BCa": [
+     -0.006142626511651317,
+     0.009824752851908529
+    ],
+    "pliegues_a_favor": 6,
+    "n_pliegues": 15,
+    "wilcoxon_W": 54.0,
+    "wilcoxon_p": 0.7322308100644752,
+    "t_NB": 0.21738244076140936,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.8310465436956875,
+    "delta_cliff": 0.2,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.12232793258807552,
+    "bayes": {
+     "P(EPL peor)": 0.04024,
+     "P(equivalentes)": 0.77326,
+     "P(EPL mejor)": 0.1865
+    },
+    "supuestos": {
+     "shapiro_p": 0.050909715004707375,
+     "asimetria": -0.019290653285703663,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   }
+  ],
+  "epl_v2_vs_variantes": [
+   {
+    "rival": "[solo geografico]",
+    "media_rival": 0.5725281709345132,
+    "dif_media": -0.002167673274869708,
+    "IC95_BCa": [
+     -0.00432618076068804,
+     1.8792908023712585e-05
+    ],
+    "pliegues_a_favor": 6,
+    "n_pliegues": 15,
+    "wilcoxon_W": 30.0,
+    "wilcoxon_p": 0.08711843744714781,
+    "t_NB": -0.8587530427414534,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.4049405660177303,
+    "delta_cliff": 0.04,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": -0.48324733108310053,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 1.0,
+     "P(EPL mejor)": 0.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.006157107578582351,
+     "asimetria": -0.03391484502140858,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.26135531234144344,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo variables]",
+    "media_rival": 0.5695454923762896,
+    "dif_media": 0.0008150052833538534,
+    "IC95_BCa": [
+     -0.001440951339610034,
+     0.004121869456070047
+    ],
+    "pliegues_a_favor": 3,
+    "n_pliegues": 15,
+    "wilcoxon_W": 42.0,
+    "wilcoxon_p": 0.6572752192771221,
+    "t_NB": 0.25947586977714543,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.799044748036682,
+    "delta_cliff": 0.04,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.14601522825465366,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.99998,
+     "P(EPL mejor)": 2e-05
+    },
+    "supuestos": {
+     "shapiro_p": 0.0014286390943149703,
+     "asimetria": 1.0290863514398845,
+     "ceros": 6
+    },
+    "wilcoxon_p_holm": 0.9875473290162122,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo probabilidades]",
+    "media_rival": 0.5684380156737663,
+    "dif_media": 0.001922481985877389,
+    "IC95_BCa": [
+     0.0001387443257992634,
+     0.004601934093630248
+    ],
+    "pliegues_a_favor": 9,
+    "n_pliegues": 15,
+    "wilcoxon_W": 48.0,
+    "wilcoxon_p": 0.4937736645081061,
+    "t_NB": 0.769642984684434,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.4543023874530282,
+    "delta_cliff": 0.12,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.43310230034033365,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 1.0,
+     "P(EPL mejor)": 0.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.0007912852825139821,
+     "asimetria": 1.0651088549764658,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.9875473290162122,
+    "t_NB_p_holm": 1.0
+   }
+  ]
+ },
+ "california": {
+  "media": {
+   "KNN": 0.3875912184080424,
+   "Naive Bayes": 0.3198993449768501,
+   "Logística L1/L2": 0.43354169924030017,
+   "Árbol de decisión": 0.3585767754885457,
+   "Random Forest": 0.4088515306377364,
+   "XGBoost": 0.43143508977155404,
+   "SVM": 0.41040646064418973,
+   "LightGBM": 0.4324792801817273,
+   "CatBoost": 0.4287184287915037,
+   "EPL (original)": 0.45871136008127783,
+   "[solo geografico]": 0.4614069279134512,
+   "[solo variables]": 0.4570319022844338,
+   "[solo probabilidades]": 0.4582642678163437
+  },
+  "sd": {
+   "KNN": 0.033603472215822876,
+   "Naive Bayes": 0.05013939501322101,
+   "Logística L1/L2": 0.016639766520347293,
+   "Árbol de decisión": 0.04441058588785723,
+   "Random Forest": 0.03936200083578028,
+   "XGBoost": 0.035996806419502904,
+   "SVM": 0.03973918094321639,
+   "LightGBM": 0.03184016638843818,
+   "CatBoost": 0.03210311262953668,
+   "EPL (original)": 0.025823854305879218,
+   "[solo geografico]": 0.021651077976340652,
+   "[solo variables]": 0.025377068963965643,
+   "[solo probabilidades]": 0.02385753497822656
+  },
+  "espacio_elegido": {
+   "variables": 7,
+   "probabilidades": 5,
+   "geografico": 3
+  },
+  "friedman": {
+   "chi2": 98.50545454545454,
+   "p": 3.154958509132214e-17,
+   "rangos": {
+    "EPL (original)": 1.5333333333333334,
+    "Logística L1/L2": 3.6666666666666665,
+    "LightGBM": 3.8,
+    "CatBoost": 3.8666666666666667,
+    "XGBoost": 4.266666666666667,
+    "SVM": 5.666666666666667,
+    "Random Forest": 6.0,
+    "KNN": 7.8,
+    "Árbol de decisión": 8.466666666666667,
+    "Naive Bayes": 9.933333333333334
+   },
+   "cd": 3.4975837934984835
+  },
+  "nemenyi_p_epl": {
+   "KNN": 6.446257407866085e-07,
+   "Naive Bayes": 1.3522516439934407e-12,
+   "Logística L1/L2": 0.6486450926547184,
+   "Árbol de decisión": 1.607048405460887e-08,
+   "Random Forest": 0.0021679287763414212,
+   "XGBoost": 0.28340340697420396,
+   "SVM": 0.0071028898472326185,
+   "LightGBM": 0.5630576580333271,
+   "CatBoost": 0.5198520077854405,
+   "EPL (original)": 1.0
+  },
+  "epl_v2_vs_rivales": [
+   {
+    "rival": "KNN",
+    "media_rival": 0.3875912184080424,
+    "dif_media": 0.07112014167323544,
+    "IC95_BCa": [
+     0.059761219735565786,
+     0.08074059311698055
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006533107814151377,
+    "t_NB": 5.960081206004264,
+    "t_NB_gl": 14,
+    "t_NB_p": 3.486390396078018e-05,
+    "delta_cliff": 0.8755555555555555,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.3539250430431995,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.6452313012517281,
+     "asimetria": -0.4010613951792683,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.00027891123168624144
+   },
+   {
+    "rival": "Naive Bayes",
+    "media_rival": 0.3198993449768501,
+    "dif_media": 0.13881201510442773,
+    "IC95_BCa": [
+     0.12375665455742642,
+     0.1624701764440653
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006533107814151377,
+    "t_NB": 6.4955429483490805,
+    "t_NB_gl": 14,
+    "t_NB_p": 1.4121761120673952e-05,
+    "delta_cliff": 1.0,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.655246197096035,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.0014916975902269126,
+     "asimetria": 1.161744568655568,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.00012709585008606556
+   },
+   {
+    "rival": "Logística L1/L2",
+    "media_rival": 0.43354169924030017,
+    "dif_media": 0.0251696608409776,
+    "IC95_BCa": [
+     0.01685554398079788,
+     0.03217005633414401
+    ],
+    "pliegues_a_favor": 14,
+    "n_pliegues": 15,
+    "wilcoxon_W": 2.0,
+    "wilcoxon_p": 0.0009847668593688057,
+    "t_NB": 2.8555557075136386,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.012709869118370404,
+    "delta_cliff": 0.5822222222222222,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.6069109577880611,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.00086,
+     "P(EPL mejor)": 0.99914
+    },
+    "supuestos": {
+     "shapiro_p": 0.585473939103139,
+     "asimetria": -0.3233886171976099,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.07625921471022243
+   },
+   {
+    "rival": "Árbol de decisión",
+    "media_rival": 0.3585767754885457,
+    "dif_media": 0.1001345845927321,
+    "IC95_BCa": [
+     0.07666032648324286,
+     0.12087256155276843
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006533107814151377,
+    "t_NB": 3.95334588679781,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.0014422483551628264,
+    "delta_cliff": 0.9911111111111112,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 2.224671999466296,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.3388088957361759,
+     "asimetria": -0.448248554788392,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.010095738486139785
+   },
+   {
+    "rival": "Random Forest",
+    "media_rival": 0.4088515306377364,
+    "dif_media": 0.049859829443541476,
+    "IC95_BCa": [
+     0.03321594724788068,
+     0.06740057793800082
+    ],
+    "pliegues_a_favor": 14,
+    "n_pliegues": 15,
+    "wilcoxon_W": 1.0,
+    "wilcoxon_p": 0.000803313257091444,
+    "t_NB": 2.549538502665674,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.02313809132816393,
+    "delta_cliff": 0.76,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.4347054573147282,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.00012,
+     "P(EPL mejor)": 0.99988
+    },
+    "supuestos": {
+     "shapiro_p": 0.12725953724257033,
+     "asimetria": 0.12543305322166226,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.10194239248857748
+   },
+   {
+    "rival": "XGBoost",
+    "media_rival": 0.43143508977155404,
+    "dif_media": 0.02727627030972379,
+    "IC95_BCa": [
+     0.014105401034059087,
+     0.037166196697203994
+    ],
+    "pliegues_a_favor": 13,
+    "n_pliegues": 15,
+    "wilcoxon_W": 7.0,
+    "wilcoxon_p": 0.0026055629474458766,
+    "t_NB": 2.1103047066928284,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.05330641285343887,
+    "delta_cliff": 0.4488888888888889,
+    "delta_magnitud": "mediano",
+    "d_cohen_pareada": 1.187534793502266,
+    "bayes": {
+     "P(EPL peor)": 2e-05,
+     "P(equivalentes)": 0.00042,
+     "P(EPL mejor)": 0.99956
+    },
+    "supuestos": {
+     "shapiro_p": 0.29713662592062295,
+     "asimetria": -0.7613519570263271,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.007816688842337629,
+    "t_NB_p_holm": 0.15991923856031662
+   },
+   {
+    "rival": "SVM",
+    "media_rival": 0.41040646064418973,
+    "dif_media": 0.04830489943708815,
+    "IC95_BCa": [
+     0.03293345308021591,
+     0.0650053853152986
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 0.0006533107814151377,
+    "t_NB": 2.614622357261113,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.020388478497715495,
+    "delta_cliff": 0.6177777777777778,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.47133018813308,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.10858652221176901,
+     "asimetria": 0.31563904362613077,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00587979703273624,
+    "t_NB_p_holm": 0.10194239248857748
+   },
+   {
+    "rival": "LightGBM",
+    "media_rival": 0.4324792801817273,
+    "dif_media": 0.026232079899550533,
+    "IC95_BCa": [
+     0.014221776373419955,
+     0.03602980186684971
+    ],
+    "pliegues_a_favor": 13,
+    "n_pliegues": 15,
+    "wilcoxon_W": 7.0,
+    "wilcoxon_p": 0.0026055629474458766,
+    "t_NB": 2.085654791511893,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.05579293294543192,
+    "delta_cliff": 0.49333333333333335,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.1736635113876963,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.00088,
+     "P(EPL mejor)": 0.99912
+    },
+    "supuestos": {
+     "shapiro_p": 0.6227241555163825,
+     "asimetria": -0.4247634865714999,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.007816688842337629,
+    "t_NB_p_holm": 0.15991923856031662
+   },
+   {
+    "rival": "CatBoost",
+    "media_rival": 0.4287184287915037,
+    "dif_media": 0.029992931289774153,
+    "IC95_BCa": [
+     0.01639042891805234,
+     0.04839716635108356
+    ],
+    "pliegues_a_favor": 13,
+    "n_pliegues": 15,
+    "wilcoxon_W": 7.0,
+    "wilcoxon_p": 0.0026055629474458766,
+    "t_NB": 1.6413709521895765,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.12298543684193308,
+    "delta_cliff": 0.52,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 0.923651029440075,
+    "bayes": {
+     "P(EPL peor)": 0.00016,
+     "P(equivalentes)": 0.0037,
+     "P(EPL mejor)": 0.99614
+    },
+    "supuestos": {
+     "shapiro_p": 0.16992664472171215,
+     "asimetria": 0.8224999389491209,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.007816688842337629,
+    "t_NB_p_holm": 0.15991923856031662
+   }
+  ],
+  "epl_v2_vs_variantes": [
+   {
+    "rival": "[solo geografico]",
+    "media_rival": 0.4614069279134512,
+    "dif_media": -0.002695567832173336,
+    "IC95_BCa": [
+     -0.010900729146749387,
+     0.005687529541024944
+    ],
+    "pliegues_a_favor": 9,
+    "n_pliegues": 15,
+    "wilcoxon_W": 59.0,
+    "wilcoxon_p": 0.954698429734882,
+    "t_NB": -0.2831014516756131,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.7812420479297498,
+    "delta_cliff": -0.03111111111111111,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": -0.1593100858324184,
+    "bayes": {
+     "P(EPL peor)": 0.0886,
+     "P(equivalentes)": 0.90798,
+     "P(EPL mejor)": 0.00342
+    },
+    "supuestos": {
+     "shapiro_p": 0.2895538437774918,
+     "asimetria": 0.07603778976881322,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo variables]",
+    "media_rival": 0.4570319022844338,
+    "dif_media": 0.0016794577968440787,
+    "IC95_BCa": [
+     -0.0017456818375486845,
+     0.007147503755799066
+    ],
+    "pliegues_a_favor": 7,
+    "n_pliegues": 15,
+    "wilcoxon_W": 54.0,
+    "wilcoxon_p": 0.7546088023649585,
+    "t_NB": 0.34390197030050595,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.7360304954117286,
+    "delta_cliff": 0.02666666666666667,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.1935244488583131,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.9982,
+     "P(EPL mejor)": 0.0018
+    },
+    "supuestos": {
+     "shapiro_p": 0.11007089522748698,
+     "asimetria": 1.177647649196115,
+     "ceros": 1
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo probabilidades]",
+    "media_rival": 0.4582642678163437,
+    "dif_media": 0.00044709226493413096,
+    "IC95_BCa": [
+     -0.0037568047502355498,
+     0.006397880664272948
+    ],
+    "pliegues_a_favor": 7,
+    "n_pliegues": 15,
+    "wilcoxon_W": 59.0,
+    "wilcoxon_p": 0.954698429734882,
+    "t_NB": 0.07858238090548648,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.9384769420992525,
+    "delta_cliff": 0.03111111111111111,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.044220775883952325,
+    "bayes": {
+     "P(EPL peor)": 0.00012,
+     "P(equivalentes)": 0.9977,
+     "P(EPL mejor)": 0.00218
+    },
+    "supuestos": {
+     "shapiro_p": 0.1573240052945008,
+     "asimetria": 0.8381645484943911,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   }
+  ]
+ },
+ "vino_tinto": {
+  "media": {
+   "KNN": 0.5436382778543665,
+   "Naive Bayes": 0.38403552943806574,
+   "Logística L1/L2": 0.46099616932125526,
+   "Árbol de decisión": 0.45035716665475395,
+   "Random Forest": 0.5775503071257578,
+   "XGBoost": 0.5629185645661057,
+   "SVM": 0.5033543491745047,
+   "LightGBM": 0.5409840668624457,
+   "CatBoost": 0.5451180179309046,
+   "EPL (original)": 0.5465372966445611,
+   "[solo geografico]": 0.5372497057689759,
+   "[solo variables]": 0.5349868907395957,
+   "[solo probabilidades]": 0.5369322335821626
+  },
+  "sd": {
+   "KNN": 0.013780303358877095,
+   "Naive Bayes": 0.027085156727948773,
+   "Logística L1/L2": 0.03128556428455602,
+   "Árbol de decisión": 0.03932947923828342,
+   "Random Forest": 0.03266387778180777,
+   "XGBoost": 0.04130889195752037,
+   "SVM": 0.03869051536444606,
+   "LightGBM": 0.03424479467730709,
+   "CatBoost": 0.034270238388435514,
+   "EPL (original)": 0.03299268838113173,
+   "[solo geografico]": 0.03139954081829739,
+   "[solo variables]": 0.03356580630827643,
+   "[solo probabilidades]": 0.03310328760502876
+  },
+  "espacio_elegido": {
+   "variables": 7,
+   "probabilidades": 6,
+   "geografico": 2
+  },
+  "friedman": {
+   "chi2": 104.06181818181813,
+   "p": 2.36678465440869e-18,
+   "rangos": {
+    "Random Forest": 1.9333333333333333,
+    "XGBoost": 2.8,
+    "EPL (original)": 4.0,
+    "CatBoost": 4.066666666666666,
+    "KNN": 4.333333333333333,
+    "LightGBM": 4.6,
+    "SVM": 6.6,
+    "Árbol de decisión": 8.333333333333334,
+    "Logística L1/L2": 8.466666666666667,
+    "Naive Bayes": 9.866666666666667
+   },
+   "cd": 3.4975837934984835
+  },
+  "nemenyi_p_epl": {
+   "KNN": 0.9999996523603387,
+   "Naive Bayes": 4.964486007841273e-06,
+   "Logística L1/L2": 0.0021679287763414212,
+   "Árbol de decisión": 0.0035300037775447546,
+   "Random Forest": 0.6899894612235107,
+   "XGBoost": 0.9861933559998985,
+   "SVM": 0.35540242555977,
+   "LightGBM": 0.9999424594963265,
+   "CatBoost": 0.9999999999998075,
+   "EPL (original)": 1.0
+  },
+  "epl_v2_vs_rivales": [
+   {
+    "rival": "KNN",
+    "media_rival": 0.5436382778543665,
+    "dif_media": 0.002899018790194726,
+    "IC95_BCa": [
+     -0.015892315407678263,
+     0.019594797687652363
+    ],
+    "pliegues_a_favor": 8,
+    "n_pliegues": 15,
+    "wilcoxon_W": 53.0,
+    "wilcoxon_p": 0.7197265625,
+    "t_NB": 0.14128232577518943,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.8896597269497892,
+    "delta_cliff": 0.15555555555555556,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.07950400576412155,
+    "bayes": {
+     "P(EPL peor)": 0.28134,
+     "P(equivalentes)": 0.12356,
+     "P(EPL mejor)": 0.5951
+    },
+    "supuestos": {
+     "shapiro_p": 0.33390687247412254,
+     "asimetria": -0.3485619131758083,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "Naive Bayes",
+    "media_rival": 0.38403552943806574,
+    "dif_media": 0.1625017672064956,
+    "IC95_BCa": [
+     0.13916204156083842,
+     0.1825311679257085
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 6.103515625e-05,
+    "t_NB": 6.600062537141991,
+    "t_NB_gl": 14,
+    "t_NB_p": 1.1892669631809911e-05,
+    "delta_cliff": 1.0,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 3.7140626551650913,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.5707070302981065,
+     "asimetria": -0.45828463802127634,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00054931640625,
+    "t_NB_p_holm": 0.0001070340266862892
+   },
+   {
+    "rival": "Logística L1/L2",
+    "media_rival": 0.46099616932125526,
+    "dif_media": 0.08554112732330603,
+    "IC95_BCa": [
+     0.06145388931670211,
+     0.1052876439090684
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 6.103515625e-05,
+    "t_NB": 3.4256578618709312,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.004098308778308058,
+    "delta_cliff": 0.9288888888888889,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 1.927725360562565,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 2e-05,
+     "P(EPL mejor)": 0.99998
+    },
+    "supuestos": {
+     "shapiro_p": 0.09554691881134884,
+     "asimetria": -0.5737765161215241,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00054931640625,
+    "t_NB_p_holm": 0.028688161448156405
+   },
+   {
+    "rival": "Árbol de decisión",
+    "media_rival": 0.45035716665475395,
+    "dif_media": 0.09618012998980731,
+    "IC95_BCa": [
+     0.08020730319841378,
+     0.11611010930551269
+    ],
+    "pliegues_a_favor": 15,
+    "n_pliegues": 15,
+    "wilcoxon_W": 0.0,
+    "wilcoxon_p": 6.103515625e-05,
+    "t_NB": 4.693457179679661,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.00034543927510563745,
+    "delta_cliff": 0.9377777777777778,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 2.641155888533922,
+    "bayes": {
+     "P(EPL peor)": 0.0,
+     "P(equivalentes)": 0.0,
+     "P(EPL mejor)": 1.0
+    },
+    "supuestos": {
+     "shapiro_p": 0.39402493933392857,
+     "asimetria": 0.5718768683094059,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.00054931640625,
+    "t_NB_p_holm": 0.0027635142008450996
+   },
+   {
+    "rival": "Random Forest",
+    "media_rival": 0.5775503071257578,
+    "dif_media": -0.03101301048119647,
+    "IC95_BCa": [
+     -0.052578534058876907,
+     -0.016077983971245345
+    ],
+    "pliegues_a_favor": 3,
+    "n_pliegues": 15,
+    "wilcoxon_W": 12.0,
+    "wilcoxon_p": 0.0042724609375,
+    "t_NB": -1.516578620465271,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.1516247162014505,
+    "delta_cliff": -0.48444444444444446,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": -0.853426461672734,
+    "bayes": {
+     "P(EPL peor)": 0.99708,
+     "P(equivalentes)": 0.00264,
+     "P(EPL mejor)": 0.00028
+    },
+    "supuestos": {
+     "shapiro_p": 0.4959481875711051,
+     "asimetria": -0.7441741075388959,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.025634765625,
+    "t_NB_p_holm": 0.7771444949669789
+   },
+   {
+    "rival": "XGBoost",
+    "media_rival": 0.5629185645661057,
+    "dif_media": -0.016381267921544432,
+    "IC95_BCa": [
+     -0.0384248841402184,
+     0.0015006862307689285
+    ],
+    "pliegues_a_favor": 7,
+    "n_pliegues": 15,
+    "wilcoxon_W": 38.0,
+    "wilcoxon_p": 0.22930908203125,
+    "t_NB": -0.7181681833080126,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.4844669018001346,
+    "delta_cliff": -0.28888888888888886,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": -0.404135811553548,
+    "bayes": {
+     "P(EPL peor)": 0.86396,
+     "P(equivalentes)": 0.07144,
+     "P(EPL mejor)": 0.0646
+    },
+    "supuestos": {
+     "shapiro_p": 0.8347036274509325,
+     "asimetria": -0.5161979900120187,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.917236328125,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "SVM",
+    "media_rival": 0.5033543491745047,
+    "dif_media": 0.0431829474700566,
+    "IC95_BCa": [
+     0.016532702578855172,
+     0.06419483119237396
+    ],
+    "pliegues_a_favor": 12,
+    "n_pliegues": 15,
+    "wilcoxon_W": 13.0,
+    "wilcoxon_p": 0.00537109375,
+    "t_NB": 1.6108368618444957,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.12952408249449648,
+    "delta_cliff": 0.6266666666666667,
+    "delta_magnitud": "grande",
+    "d_cohen_pareada": 0.9064685369982369,
+    "bayes": {
+     "P(EPL peor)": 0.00068,
+     "P(equivalentes)": 2e-05,
+     "P(EPL mejor)": 0.9993
+    },
+    "supuestos": {
+     "shapiro_p": 0.33222518662192324,
+     "asimetria": -0.5765473945033601,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.02685546875,
+    "t_NB_p_holm": 0.7771444949669789
+   },
+   {
+    "rival": "LightGBM",
+    "media_rival": 0.5409840668624457,
+    "dif_media": 0.00555322978211561,
+    "IC95_BCa": [
+     -0.015074228267957887,
+     0.024795444970605353
+    ],
+    "pliegues_a_favor": 8,
+    "n_pliegues": 15,
+    "wilcoxon_W": 51.0,
+    "wilcoxon_p": 0.638671875,
+    "t_NB": 0.23917373280063944,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.814436749510552,
+    "delta_cliff": 0.16444444444444445,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.1345905776032162,
+    "bayes": {
+     "P(EPL peor)": 0.2594,
+     "P(equivalentes)": 0.01196,
+     "P(EPL mejor)": 0.72864
+    },
+    "supuestos": {
+     "shapiro_p": 0.46074236046525746,
+     "asimetria": -0.1840732260969543,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "CatBoost",
+    "media_rival": 0.5451180179309046,
+    "dif_media": 0.001419278713656665,
+    "IC95_BCa": [
+     -0.01878501257373383,
+     0.023081150150349453
+    ],
+    "pliegues_a_favor": 7,
+    "n_pliegues": 15,
+    "wilcoxon_W": 56.0,
+    "wilcoxon_p": 0.846923828125,
+    "t_NB": 0.059266862025340455,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.9535772384428839,
+    "delta_cliff": 0.057777777777777775,
+    "delta_magnitud": "despreciable",
+    "d_cohen_pareada": 0.03335132624856271,
+    "bayes": {
+     "P(EPL peor)": 0.49514,
+     "P(equivalentes)": 0.02186,
+     "P(EPL mejor)": 0.483
+    },
+    "supuestos": {
+     "shapiro_p": 0.12257661117595303,
+     "asimetria": 0.2089954577400407,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 1.0,
+    "t_NB_p_holm": 1.0
+   }
+  ],
+  "epl_v2_vs_variantes": [
+   {
+    "rival": "[solo geografico]",
+    "media_rival": 0.5372497057689759,
+    "dif_media": 0.009287590875585358,
+    "IC95_BCa": [
+     -0.0009129763902041811,
+     0.02079406630727528
+    ],
+    "pliegues_a_favor": 8,
+    "n_pliegues": 15,
+    "wilcoxon_W": 40.0,
+    "wilcoxon_p": 0.27685546875,
+    "t_NB": 0.7492153707319322,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.46613049605662726,
+    "delta_cliff": 0.2088888888888889,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.42160703985027626,
+    "bayes": {
+     "P(EPL peor)": 0.0015,
+     "P(equivalentes)": 0.49294,
+     "P(EPL mejor)": 0.50556
+    },
+    "supuestos": {
+     "shapiro_p": 0.3355788467366224,
+     "asimetria": 0.28388205362574126,
+     "ceros": 0
+    },
+    "wilcoxon_p_holm": 0.5537109375,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo variables]",
+    "media_rival": 0.5349868907395957,
+    "dif_media": 0.011550405904965552,
+    "IC95_BCa": [
+     0.0010168902244750803,
+     0.02543571710303455
+    ],
+    "pliegues_a_favor": 10,
+    "n_pliegues": 15,
+    "wilcoxon_W": 26.0,
+    "wilcoxon_p": 0.05698317984206413,
+    "t_NB": 0.83754114228907,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.41635788902947146,
+    "delta_cliff": 0.24,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.47131072792639894,
+    "bayes": {
+     "P(EPL peor)": 0.00122,
+     "P(equivalentes)": 0.66148,
+     "P(EPL mejor)": 0.3373
+    },
+    "supuestos": {
+     "shapiro_p": 0.08605362844457795,
+     "asimetria": 0.7262066712732621,
+     "ceros": 1
+    },
+    "wilcoxon_p_holm": 0.17094953952619238,
+    "t_NB_p_holm": 1.0
+   },
+   {
+    "rival": "[solo probabilidades]",
+    "media_rival": 0.5369322335821626,
+    "dif_media": 0.00960506306239846,
+    "IC95_BCa": [
+     -0.006192820625519439,
+     0.02794869382294068
+    ],
+    "pliegues_a_favor": 8,
+    "n_pliegues": 15,
+    "wilcoxon_W": 44.0,
+    "wilcoxon_p": 0.3784823639278906,
+    "t_NB": 0.49236766876576493,
+    "t_NB_gl": 14,
+    "t_NB_p": 0.630090784105826,
+    "delta_cliff": 0.17777777777777778,
+    "delta_magnitud": "pequeño",
+    "d_cohen_pareada": 0.2770707642363483,
+    "bayes": {
+     "P(EPL peor)": 0.08998,
+     "P(equivalentes)": 0.31112,
+     "P(EPL mejor)": 0.5989
+    },
+    "supuestos": {
+     "shapiro_p": 0.4648218340370982,
+     "asimetria": 0.35737220813070086,
+     "ceros": 1
+    },
+    "wilcoxon_p_holm": 0.5537109375,
+    "t_NB_p_holm": 1.0
+   }
+  ]
+ }
+}

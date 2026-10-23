@@ -1,0 +1,38 @@
+{
+ "condiciones": {
+  "base": {
+   "EPL": 0.6803029358851226,
+   "promedio_simple": 0.6669078932920562,
+   "pesos_error_global": 0.6681116499118269,
+   "Random Forest": 0.657931984879599,
+   "CatBoost": 0.6478792099670585
+  },
+  "ruido_20": {
+   "EPL": 0.6519175343355452,
+   "promedio_simple": 0.6339713378859756,
+   "pesos_error_global": 0.648843828630055,
+   "Random Forest": 0.6411975880149645,
+   "CatBoost": 0.6302526677806171
+  },
+  "tamano_25": {
+   "EPL": 0.6481740422969677,
+   "promedio_simple": 0.6320110950686515,
+   "pesos_error_global": 0.6451081831356278,
+   "Random Forest": 0.6279686740135864,
+   "CatBoost": 0.6101198630750835
+  },
+  "desbalance_56": {
+   "EPL": 0.6582635650917383,
+   "promedio_simple": 0.6602214153003007,
+   "pesos_error_global": 0.6677034801454925,
+   "Random Forest": 0.6343175979174835,
+   "CatBoost": 0.63449866460381
+  }
+ },
+ "semillas_EPL": {
+  "42": 0.6803029358851226,
+  "1": 0.6800565009559192,
+  "2": 0.6768614645557289
+ },
+ "sd_entre_semillas": 0.0019197531388137163
+}

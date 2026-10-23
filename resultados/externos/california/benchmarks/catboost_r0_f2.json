@@ -1,0 +1,23 @@
+{
+ "conjunto": "california",
+ "modelo": "CatBoost",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 2,
+ "params": {
+  "iterations": 285,
+  "learning_rate": 0.23236071344495635,
+  "depth": 7,
+  "l2_leaf_reg": 5.233105227542001
+ },
+ "f1_interno_mejor": 0.3870954764676586,
+ "f1": 0.4773067817251806,
+ "accuracy": 0.49942726231386025,
+ "mae_ordinal": 0.6827033218785796,
+ "seg_busqueda": 801.1529043000191,
+ "seg_ajuste_final": 38.889797599986196,
+ "seg_inferencia": 0.062054899986833334,
+ "n_train": 4128,
+ "n_val": 873
+}

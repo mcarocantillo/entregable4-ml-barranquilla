@@ -1,0 +1,26 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "LightGBM",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 0,
+ "params": {
+  "n_estimators": 66,
+  "learning_rate": 0.04411829935614202,
+  "num_leaves": 21,
+  "min_child_samples": 19,
+  "subsample": 0.9140703845572055,
+  "colsample_bytree": 0.5998368910791798,
+  "reg_lambda": 0.11400863701127326
+ },
+ "f1_interno_mejor": 0.546980037365798,
+ "f1": 0.5185404769680451,
+ "accuracy": 0.609375,
+ "mae_ordinal": 0.434375,
+ "seg_busqueda": 31.841942799976096,
+ "seg_ajuste_final": 0.4137516000191681,
+ "seg_inferencia": 0.047047599975485355,
+ "n_train": 1279,
+ "n_val": 320
+}

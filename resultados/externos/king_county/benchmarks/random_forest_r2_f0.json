@@ -1,0 +1,23 @@
+{
+ "conjunto": "king_county",
+ "modelo": "Random Forest",
+ "balanceo": "smote",
+ "metodo": "Genética",
+ "repeticion": 2,
+ "fold": 0,
+ "params": {
+  "n_estimators": 132,
+  "max_depth": 20,
+  "max_features": 0.3,
+  "min_samples_leaf": 3
+ },
+ "f1_interno_mejor": 0.5749524742693963,
+ "f1": 0.5510545531517304,
+ "accuracy": 0.6163836163836164,
+ "mae_ordinal": 0.41858141858141856,
+ "seg_busqueda": 252.33345789997838,
+ "seg_ajuste_final": 11.176403400022537,
+ "seg_inferencia": 0.10200610000174493,
+ "n_train": 3999,
+ "n_val": 1001
+}

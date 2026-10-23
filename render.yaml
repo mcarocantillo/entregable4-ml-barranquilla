@@ -1,0 +1,12 @@
+# Despliegue en Render (plan gratuito). Render lee este archivo si el servicio se crea como "Blueprint"; si se crea a
+# mano (New → Web Service), se copian buildCommand, startCommand y la variable PYTHON_VERSION.
+services:
+  - type: web                                   # aplicación web
+    name: estrato-barranquilla-final            # nombre del servicio en Render
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server --workers 1 --threads 2 --timeout 120   # el dashboard nunca entrena
+    envVars:
+      - key: PYTHON_VERSION                     # sin esto Render usa otra versión y falla la carga de los joblib
+        value: 3.11.15

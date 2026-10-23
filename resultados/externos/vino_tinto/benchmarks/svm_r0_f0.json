@@ -1,0 +1,22 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "SVM",
+ "balanceo": "class_weight",
+ "metodo": "Grid",
+ "repeticion": 0,
+ "fold": 0,
+ "params": {
+  "gamma": 0.3,
+  "n_components": 300,
+  "C": 0.1
+ },
+ "f1_interno_mejor": 0.4975390146375665,
+ "f1": 0.452541294750306,
+ "accuracy": 0.55625,
+ "mae_ordinal": 0.490625,
+ "seg_busqueda": 30.49494780000532,
+ "seg_ajuste_final": 0.7466625000233762,
+ "seg_inferencia": 0.03615220001665875,
+ "n_train": 1279,
+ "n_val": 320
+}

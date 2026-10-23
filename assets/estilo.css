@@ -1,0 +1,64 @@
+/* Dashboard del proyecto final. Paleta de 5 colores (sección 7.4 de la guía):
+   azul oscuro (marca y estratos altos), azul (datos), dorado (acento), naranja (modelo original), gris (texto secundario).
+   Los estratos usan una sola rampa de azules (claro = 1, oscuro = 6). */
+:root {
+  --azul-oscuro: #0d366b; --azul: #2a78d6; --dorado: #f5b83d; --naranja: #eb6834; --gris: #6b7280;
+  --noche: #061428; --tinta: #101418; --borde: #e3e6eb; --fondo: #f3f5f8; --blanco: #ffffff;
+  --sombra: 0 1px 2px rgba(6,20,40,.05), 0 8px 24px rgba(6,20,40,.07); --radio: 14px;
+  /* sliders y desplegables de Dash 4 con los colores de la paleta (no el morado por defecto) */
+  --Dash-Fill-Interactive-Strong: var(--azul); --Dash-Stroke-Interactive-Strong: var(--azul);
+}
+html, body { font-size: 15px; background: var(--fondo); color: var(--tinta);
+  font-family: Inter, "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+@media (max-width: 992px) { html, body { font-size: 14px; } }
+
+/* Barra fija */
+.barra { position: sticky; top: 0; z-index: 1030; background: var(--noche) !important; box-shadow: var(--sombra); }
+.barra .navbar-brand { font-weight: 800; letter-spacing: -.01em; color: #fff !important; }
+.barra .nav-link { color: #c8d6ea !important; font-weight: 600; border-radius: 8px; padding: 6px 14px !important; }
+.barra .nav-link.active, .barra .nav-link:hover { color: #fff !important; background: rgba(255,255,255,.10); }
+
+/* Portada (página Contexto) */
+.hero { position: relative; border-radius: 0 0 var(--radio) var(--radio); overflow: hidden; color: #fff; margin: 0 -12px 24px;
+  background: linear-gradient(90deg, rgba(6,20,40,.94) 0%, rgba(6,20,40,.78) 55%, rgba(6,20,40,.35) 100%),
+              url("/assets/portada_satelite.jpg") center/cover no-repeat; padding: 56px 40px 40px; }
+.hero-kicker { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 700; color: var(--dorado); }
+.hero-titulo { font-size: clamp(1.9rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.08; margin: 10px 0 14px; max-width: 900px; }
+.hero-sub { font-size: 1.12rem; color: #d9e4f3; max-width: 760px; }
+.hero-cifra { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 12px; padding: 14px 16px; height: 100%; }
+.hero-cifra-valor { font-size: 1.9rem; font-weight: 800; line-height: 1; color: #fff; }
+.hero-cifra-etiqueta { font-size: .86rem; color: #c8d6ea; margin-top: 6px; }
+.hero-credito { position: absolute; right: 14px; bottom: 8px; font-size: .7rem; color: rgba(255,255,255,.65); }
+
+/* Tarjetas y textos */
+.tarjeta { background: var(--blanco); border: 1px solid var(--borde); border-radius: var(--radio); box-shadow: var(--sombra);
+  padding: 20px 22px; margin-bottom: 20px; }
+.tarjeta h3 { font-size: 1.15rem; font-weight: 800; color: var(--azul-oscuro); margin-bottom: 10px; }
+.tarjeta h4 { font-size: 1rem; font-weight: 700; color: var(--azul-oscuro); margin: 12px 0 6px; }
+.insight { border-left: 4px solid var(--dorado); background: #fffaf0; padding: 8px 12px; border-radius: 6px; margin-top: 8px;
+  font-size: .95rem; }
+.insight b { color: var(--azul-oscuro); }
+.fuente { color: var(--gris); font-size: .82rem; margin-top: 6px; }
+.seccion-titulo { font-weight: 800; color: var(--azul-oscuro); margin: 8px 0 14px; font-size: 1.5rem; }
+.kpi { text-align: center; }
+.kpi-valor { font-size: 1.7rem; font-weight: 800; color: var(--azul-oscuro); line-height: 1.1; }
+.kpi-valor.original { color: var(--naranja); }
+.kpi-etiqueta { color: var(--gris); font-size: .85rem; }
+.veredicto { border-radius: 10px; padding: 12px 16px; font-weight: 600; }
+.pseudocodigo { background: #0b1a33; color: #e6eefb; border-radius: 10px; padding: 14px 16px; font-size: .86rem;
+  white-space: pre; overflow-x: auto; font-family: "JetBrains Mono", Consolas, monospace; }
+
+/* Filtros de la página EDA */
+.filtros { position: sticky; top: 64px; z-index: 1000; }
+.filtros label { font-weight: 700; font-size: .85rem; color: var(--azul-oscuro); margin-bottom: 2px; }
+
+/* Diagrama de la metodología */
+.paso { background: var(--blanco); border: 1px solid var(--borde); border-top: 4px solid var(--azul); border-radius: 10px;
+  padding: 10px 12px; height: 100%; font-size: .88rem; }
+.paso.original { border-top-color: var(--naranja); }
+.paso b { color: var(--azul-oscuro); display: block; margin-bottom: 2px; }
+.flecha { color: var(--gris); font-size: 1.4rem; display: flex; align-items: center; justify-content: center; }
+
+/* Tablas */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th { background: var(--azul-oscuro) !important;
+  color: #fff !important; font-weight: 700; }

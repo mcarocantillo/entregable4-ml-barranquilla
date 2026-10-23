@@ -1,0 +1,138 @@
+{
+ "equipo": {
+  "procesador": "Intel64 Family 6 Model 142 Stepping 11, GenuineIntel",
+  "python": "3.14.6",
+  "sistema": "Windows-11-10.0.26200-SP0"
+ },
+ "tabla": [
+  {
+   "serie": "combinador vs n",
+   "tamano": 1000,
+   "segundos": 0.0491283000446856
+  },
+  {
+   "serie": "combinador vs n",
+   "tamano": 2000,
+   "segundos": 0.10829060000833124
+  },
+  {
+   "serie": "combinador vs n",
+   "tamano": 4000,
+   "segundos": 0.21282610000343993
+  },
+  {
+   "serie": "combinador vs n",
+   "tamano": 7943,
+   "segundos": 0.3360116999829188
+  },
+  {
+   "serie": "combinador vs M",
+   "tamano": 1,
+   "segundos": 0.19334420002996922
+  },
+  {
+   "serie": "combinador vs M",
+   "tamano": 2,
+   "segundos": 0.28058330004569143
+  },
+  {
+   "serie": "combinador vs M",
+   "tamano": 4,
+   "segundos": 0.2565798999858089
+  },
+  {
+   "serie": "combinador vs M",
+   "tamano": 7,
+   "segundos": 0.3097702999948524
+  },
+  {
+   "serie": "combinador vs J",
+   "tamano": 5,
+   "segundos": 0.1200539999990724
+  },
+  {
+   "serie": "combinador vs J",
+   "tamano": 10,
+   "segundos": 0.19432459998643026
+  },
+  {
+   "serie": "combinador vs J",
+   "tamano": 20,
+   "segundos": 0.22991009999532253
+  },
+  {
+   "serie": "combinador vs J",
+   "tamano": 40,
+   "segundos": 0.29027689999202266
+  },
+  {
+   "serie": "combinador vs J",
+   "tamano": 80,
+   "segundos": 0.32511749997502193
+  },
+  {
+   "serie": "EPL completo vs n",
+   "tamano": 1000,
+   "segundos": 14.376399700006004
+  },
+  {
+   "serie": "inferencia por vivienda (ms) vs n de entrenamiento",
+   "tamano": 1000,
+   "segundos": 0.09086540329633905
+  },
+  {
+   "serie": "EPL completo vs n",
+   "tamano": 2000,
+   "segundos": 23.29763460002141
+  },
+  {
+   "serie": "inferencia por vivienda (ms) vs n de entrenamiento",
+   "tamano": 2000,
+   "segundos": 0.12323542275064171
+  },
+  {
+   "serie": "EPL completo vs n",
+   "tamano": 4000,
+   "segundos": 48.69545030000154
+  },
+  {
+   "serie": "inferencia por vivienda (ms) vs n de entrenamiento",
+   "tamano": 4000,
+   "segundos": 0.19112439262495168
+  },
+  {
+   "serie": "EPL completo vs n",
+   "tamano": 7943,
+   "segundos": 89.97482860001037
+  },
+  {
+   "serie": "inferencia por vivienda (ms) vs n de entrenamiento",
+   "tamano": 7943,
+   "segundos": 0.32253950436946194
+  },
+  {
+   "serie": "EPL completo vs p",
+   "tamano": 8,
+   "segundos": 47.81784420000622
+  },
+  {
+   "serie": "EPL completo vs p",
+   "tamano": 16,
+   "segundos": 63.88746409997111
+  },
+  {
+   "serie": "EPL completo vs p",
+   "tamano": 33,
+   "segundos": 89.24066269997275
+  }
+ ],
+ "pendientes": {
+  "EPL completo vs n": 0.9028528984400122,
+  "EPL completo vs p": 0.4404606633910407,
+  "combinador vs J": 0.3453516703409959,
+  "combinador vs M": 0.20288411359486294,
+  "combinador vs n": 0.9327877618444673,
+  "inferencia por vivienda (ms) vs n de entrenamiento": 0.6133498660179894
+ },
+ "lectura": "Pendiente log-log del combinador en n: 0.93 (teoría: 1); en M: 0.20; en J: 0.35. EPL completo en n: 0.90 (domina el costo de los expertos)."
+}

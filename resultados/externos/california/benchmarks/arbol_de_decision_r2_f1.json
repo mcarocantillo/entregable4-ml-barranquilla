@@ -1,0 +1,22 @@
+{
+ "conjunto": "california",
+ "modelo": "Árbol de decisión",
+ "balanceo": "smote",
+ "metodo": "Grid",
+ "repeticion": 2,
+ "fold": 1,
+ "params": {
+  "max_depth": 10,
+  "min_samples_leaf": 5,
+  "criterion": "gini"
+ },
+ "f1_interno_mejor": 0.3234953030929068,
+ "f1": 0.2873091383585366,
+ "accuracy": 0.3186221743810549,
+ "mae_ordinal": 1.3067814854682454,
+ "seg_busqueda": 4.519999600015581,
+ "seg_ajuste_final": 0.1514603000250645,
+ "seg_inferencia": 0.01329569995868951,
+ "n_train": 4072,
+ "n_val": 929
+}

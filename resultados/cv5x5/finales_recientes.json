@@ -1,0 +1,23 @@
+{
+ "LightGBM": {
+  "params": {
+   "n_estimators": 318,
+   "learning_rate": 0.16515182865193914,
+   "num_leaves": 61,
+   "min_child_samples": 5,
+   "subsample": 0.9704758496824275,
+   "colsample_bytree": 0.9594460705667762,
+   "reg_lambda": 0.8280763044734758
+  },
+  "f1_busqueda_final": 0.6569679726824679
+ },
+ "CatBoost": {
+  "params": {
+   "iterations": 230,
+   "learning_rate": 0.15317709628184267,
+   "depth": 4,
+   "l2_leaf_reg": 9.330606024425668
+  },
+  "f1_busqueda_final": 0.6643461126237535
+ }
+}

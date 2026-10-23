@@ -1,0 +1,25 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "XGBoost",
+ "balanceo": "smote",
+ "metodo": "Random",
+ "repeticion": 2,
+ "fold": 4,
+ "params": {
+  "n_estimators": 166,
+  "learning_rate": 0.08876003419293164,
+  "max_depth": 6,
+  "subsample": 0.9059995429664103,
+  "colsample_bytree": 0.8173591600002954,
+  "min_child_weight": 5.250774956782455
+ },
+ "f1_interno_mejor": 0.5641206393101816,
+ "f1": 0.45647698682847415,
+ "accuracy": 0.6081504702194357,
+ "mae_ordinal": 0.43260188087774293,
+ "seg_busqueda": 51.82978890003869,
+ "seg_ajuste_final": 2.202761299966369,
+ "seg_inferencia": 0.03095800004666671,
+ "n_train": 1280,
+ "n_val": 319
+}

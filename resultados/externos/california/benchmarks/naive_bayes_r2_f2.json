@@ -1,0 +1,20 @@
+{
+ "conjunto": "california",
+ "modelo": "Naive Bayes",
+ "balanceo": "smote",
+ "metodo": "Bayesiana",
+ "repeticion": 2,
+ "fold": 2,
+ "params": {
+  "var_smoothing": 5.5641802254313754e-08
+ },
+ "f1_interno_mejor": 0.31463895960670724,
+ "f1": 0.3668266496325095,
+ "accuracy": 0.38144329896907214,
+ "mae_ordinal": 1.0859106529209621,
+ "seg_busqueda": 3.3429602999822237,
+ "seg_ajuste_final": 0.08816959999967366,
+ "seg_inferencia": 0.011772700003348291,
+ "n_train": 4128,
+ "n_val": 873
+}

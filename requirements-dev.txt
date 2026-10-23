@@ -1,0 +1,11 @@
+# Todo lo necesario para reproducir los experimentos, las pruebas y el libro (además de requirements.txt).
+-r requirements.txt
+optuna==5.0.0
+deap==1.4.4
+scikit-posthocs==0.17.1
+matplotlib==3.11.2
+pytest==9.1.1
+jupyter-book==1.0.4.post1
+jupytext==1.19.6
+nbclient==0.11.0
+ipykernel==7.4.0

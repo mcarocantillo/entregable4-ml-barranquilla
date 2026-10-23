@@ -1,0 +1,165 @@
+{
+ "conjunto": "king_county",
+ "repeticion": 0,
+ "fold": 1,
+ "params": {
+  "n_anclas": 11,
+  "ancho_banda": 3.489105511396341,
+  "k_anclas": 8,
+  "lam": 0.24810409748678125,
+  "peso_clase": "balanced"
+ },
+ "f1_interno_mejor": 0.5697424903205811,
+ "historial": [
+  {
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5697424903205811
+  },
+  {
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 2.760069476697773,
+    "k_anclas": 7,
+    "lam": 0.679657809075816,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.564499980890214
+  },
+  {
+   "params": {
+    "n_anclas": 48,
+    "ancho_banda": 0.45042426126644386,
+    "k_anclas": 2,
+    "lam": 0.00541524411940254,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.5664939702322577
+  },
+  {
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.5681610467622947
+  },
+  {
+   "params": {
+    "n_anclas": 51,
+    "ancho_banda": 3.1749772635079774,
+    "k_anclas": 2,
+    "lam": 0.10787149503650646,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5655819390965395
+  },
+  {
+   "params": {
+    "n_anclas": 51,
+    "ancho_banda": 0.25502132423011203,
+    "k_anclas": 7,
+    "lam": 5.3331307035942155,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5686049002197667
+  },
+  {
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.8384862475684884,
+    "k_anclas": 9,
+    "lam": 0.04614342470781499,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5686091008805206
+  },
+  {
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 0.5504435472674352,
+    "k_anclas": 4,
+    "lam": 6.345573676119691,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.569691392474862
+  },
+  {
+   "params": {
+    "n_anclas": 5,
+    "ancho_banda": 1.4912521075440606,
+    "k_anclas": 3,
+    "lam": 0.003953316061726539,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5633624673180062
+  },
+  {
+   "params": {
+    "n_anclas": 20,
+    "ancho_banda": 2.0509337492498085,
+    "k_anclas": 2,
+    "lam": 4.571986603022958,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5696031632476807
+  },
+  {
+   "params": {
+    "n_anclas": 43,
+    "ancho_banda": 3.8169569751434334,
+    "k_anclas": 6,
+    "lam": 0.0229554998505001,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5626987935392753
+  },
+  {
+   "params": {
+    "n_anclas": 9,
+    "ancho_banda": 0.7708525530251685,
+    "k_anclas": 7,
+    "lam": 2.762682036514225,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.5697416415069092
+  }
+ ],
+ "f1": {
+  "EPL": 0.5935553727901018,
+  "promedio_simple": 0.5811002746929818,
+  "pesos_error_global": 0.5926964947941581,
+  "stacking_lineal": 0.5707993461722952,
+  "sin_campo_local": 0.5941466977834587
+ },
+ "pesos_globales": [
+  0.20890004966366163,
+  0.03854294291982784,
+  1.2906053086644547e-06,
+  0.09779652762409106,
+  0.20469901001310373,
+  0.45006017917300695,
+  9.999999999991015e-13
+ ],
+ "expertos": [
+  "KNN",
+  "Naive Bayes",
+  "Logística L1/L2",
+  "Árbol de decisión",
+  "Random Forest",
+  "XGBoost",
+  "SVM"
+ ],
+ "seg_busqueda": 478.09721889998764,
+ "seg_ajuste_final": 230.38343560002977,
+ "seg_inferencia": 0.7426523999893107,
+ "n_train": 3984,
+ "n_val": 1016
+}

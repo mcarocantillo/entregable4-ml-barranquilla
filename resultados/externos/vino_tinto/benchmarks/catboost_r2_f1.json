@@ -1,0 +1,23 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "CatBoost",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 2,
+ "fold": 1,
+ "params": {
+  "iterations": 285,
+  "learning_rate": 0.23236071344495635,
+  "depth": 7,
+  "l2_leaf_reg": 5.233105227542001
+ },
+ "f1_interno_mejor": 0.5398883992429361,
+ "f1": 0.5647909642774854,
+ "accuracy": 0.7125,
+ "mae_ordinal": 0.31875,
+ "seg_busqueda": 218.31905759999063,
+ "seg_ajuste_final": 11.778448200027924,
+ "seg_inferencia": 0.025885999959427863,
+ "n_train": 1279,
+ "n_val": 320
+}

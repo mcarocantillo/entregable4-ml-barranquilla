@@ -1,0 +1,25 @@
+{
+ "conjunto": "california",
+ "modelo": "XGBoost",
+ "balanceo": "smote",
+ "metodo": "Random",
+ "repeticion": 2,
+ "fold": 2,
+ "params": {
+  "n_estimators": 175,
+  "learning_rate": 0.0615868364467302,
+  "max_depth": 7,
+  "subsample": 0.9219057429987207,
+  "colsample_bytree": 0.6937391895150873,
+  "min_child_weight": 2.372048211819246
+ },
+ "f1_interno_mejor": 0.38296034525854344,
+ "f1": 0.4937137717180034,
+ "accuracy": 0.5154639175257731,
+ "mae_ordinal": 0.6678121420389461,
+ "seg_busqueda": 122.77263090002816,
+ "seg_ajuste_final": 5.340201799990609,
+ "seg_inferencia": 0.07271209999453276,
+ "n_train": 4128,
+ "n_val": 873
+}

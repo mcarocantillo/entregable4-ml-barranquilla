@@ -1,0 +1,12 @@
+format: jb-book
+root: intro                              # 0. Introducción
+chapters:
+  - file: notebooks/01_correcciones      # trazabilidad de correcciones del E3
+  - file: notebooks/02_datos             # ETL y EDA
+  - file: notebooks/03_benchmarks        # modelos benchmark y mejores combinaciones
+  - file: notebooks/04_literatura        # revisión de literatura y novedad
+  - file: notebooks/05_modelo_original   # modelo original: formulación, pseudocódigo, teoría, código, pruebas, ablación
+  - file: notebooks/06_validacion        # pruebas de hipótesis (5×5, test, conjuntos extra, robustez)
+  - file: notebooks/07_dashboard         # dashboard y despliegue
+  - file: notebooks/08_conclusiones      # conclusiones, veredicto R1–R3, limitaciones, declaración de IA (markdown)
+  - file: notebooks/09_reproducibilidad  # entorno, semillas, tabla maestra y bibliografía

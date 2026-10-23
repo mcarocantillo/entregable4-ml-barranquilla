@@ -1,0 +1,21 @@
+{
+ "conjunto": "king_county",
+ "modelo": "Logística L1/L2",
+ "balanceo": "ninguno",
+ "metodo": "Bayesiana",
+ "repeticion": 1,
+ "fold": 3,
+ "params": {
+  "penalty": "l1",
+  "C": 6.237410489458899
+ },
+ "f1_interno_mejor": 0.5177956115648118,
+ "f1": 0.5290933896743638,
+ "accuracy": 0.6114965312190287,
+ "mae_ordinal": 0.41625371655104065,
+ "seg_busqueda": 198.7592434999533,
+ "seg_ajuste_final": 26.298643200017978,
+ "seg_inferencia": 0.0269562000175938,
+ "n_train": 3991,
+ "n_val": 1009
+}

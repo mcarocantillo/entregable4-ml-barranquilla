@@ -1,0 +1,20 @@
+{
+ "conjunto": "king_county",
+ "modelo": "Naive Bayes",
+ "balanceo": "smote",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 0,
+ "params": {
+  "var_smoothing": 0.05847481789513476
+ },
+ "f1_interno_mejor": 0.4910731237548636,
+ "f1": 0.41293036452520515,
+ "accuracy": 0.46853146853146854,
+ "mae_ordinal": 0.6023976023976024,
+ "seg_busqueda": 5.375676199968439,
+ "seg_ajuste_final": 0.1553521000314504,
+ "seg_inferencia": 0.029358499974478036,
+ "n_train": 3999,
+ "n_val": 1001
+}

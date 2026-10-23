@@ -1,0 +1,22 @@
+{
+ "conjunto": "california",
+ "modelo": "SVM",
+ "balanceo": "class_weight",
+ "metodo": "Grid",
+ "repeticion": 1,
+ "fold": 4,
+ "params": {
+  "gamma": 0.3,
+  "n_components": 300,
+  "C": 10.0
+ },
+ "f1_interno_mejor": 0.39062590751212406,
+ "f1": 0.4498212103210724,
+ "accuracy": 0.45966709346991036,
+ "mae_ordinal": 0.7772087067861716,
+ "seg_busqueda": 157.02432010002667,
+ "seg_ajuste_final": 13.387138099991716,
+ "seg_inferencia": 0.04586339998058975,
+ "n_train": 4220,
+ "n_val": 781
+}

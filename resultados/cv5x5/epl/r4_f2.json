@@ -1,0 +1,248 @@
+{
+ "repeticion": 4,
+ "fold": 2,
+ "semilla_particion": 46,
+ "params": {
+  "n_anclas": 9,
+  "ancho_banda": 1.2222350327498688,
+  "k_anclas": 4,
+  "lam": 5.714085618146037,
+  "peso_clase": "ninguno"
+ },
+ "f1_interno_mejor": 0.638610541651944,
+ "historial": [
+  {
+   "evaluacion": 1,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced"
+   },
+   "f1_interno": 0.6245444246425191,
+   "f1_interno_sd": 0.06486788637355147,
+   "segundos_acum": 346.40385280002374
+  },
+  {
+   "evaluacion": 2,
+   "params": {
+    "n_anclas": 4,
+    "ancho_banda": 2.760069476697773,
+    "k_anclas": 7,
+    "lam": 0.679657809075816,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6368931708910862,
+   "f1_interno_sd": 0.06853977701003165,
+   "segundos_acum": 350.00114629999734
+  },
+  {
+   "evaluacion": 3,
+   "params": {
+    "n_anclas": 48,
+    "ancho_banda": 0.45042426126644386,
+    "k_anclas": 2,
+    "lam": 0.00541524411940254,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.612173057771178,
+   "f1_interno_sd": 0.05621155290000957,
+   "segundos_acum": 355.43790920003084
+  },
+  {
+   "evaluacion": 4,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.634250226354876,
+   "f1_interno_sd": 0.07170133598397067,
+   "segundos_acum": 363.276276300021
+  },
+  {
+   "evaluacion": 5,
+   "params": {
+    "n_anclas": 71,
+    "ancho_banda": 2.4725076000291417,
+    "k_anclas": 8,
+    "lam": 3.287791118190534,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6376230407563427,
+   "f1_interno_sd": 0.06827269854471711,
+   "segundos_acum": 367.7733188000275
+  },
+  {
+   "evaluacion": 6,
+   "params": {
+    "n_anclas": 56,
+    "ancho_banda": 1.6619498057229636,
+    "k_anclas": 4,
+    "lam": 7.448951036133896,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6381156340228112,
+   "f1_interno_sd": 0.0683003014366614,
+   "segundos_acum": 371.9163670000271
+  },
+  {
+   "evaluacion": 7,
+   "params": {
+    "n_anclas": 59,
+    "ancho_banda": 1.604931890015138,
+    "k_anclas": 3,
+    "lam": 2.521578578164802,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6344121017778056,
+   "f1_interno_sd": 0.06712996148687325,
+   "segundos_acum": 375.7755853999988
+  },
+  {
+   "evaluacion": 8,
+   "params": {
+    "n_anclas": 22,
+    "ancho_banda": 0.43050553151509574,
+    "k_anclas": 9,
+    "lam": 0.25606798959052823,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6289505098548269,
+   "f1_interno_sd": 0.06863723729539746,
+   "segundos_acum": 380.3407601999934
+  },
+  {
+   "evaluacion": 9,
+   "params": {
+    "n_anclas": 9,
+    "ancho_banda": 1.2222350327498688,
+    "k_anclas": 4,
+    "lam": 5.714085618146037,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.638610541651944,
+   "f1_interno_sd": 0.06796028719351807,
+   "segundos_acum": 383.83008960000006
+  },
+  {
+   "evaluacion": 10,
+   "params": {
+    "n_anclas": 57,
+    "ancho_banda": 1.1204531356289207,
+    "k_anclas": 8,
+    "lam": 0.06553617886121293,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.6255976779795555,
+   "f1_interno_sd": 0.06619056655657185,
+   "segundos_acum": 388.60004390001995
+  },
+  {
+   "evaluacion": 11,
+   "params": {
+    "n_anclas": 19,
+    "ancho_banda": 1.0332790438675763,
+    "k_anclas": 1,
+    "lam": 0.13795308863449063,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.629100260618278,
+   "f1_interno_sd": 0.06959199514706015,
+   "segundos_acum": 392.19972929998767
+  },
+  {
+   "evaluacion": 12,
+   "params": {
+    "n_anclas": 16,
+    "ancho_banda": 1.0640666141897233,
+    "k_anclas": 4,
+    "lam": 6.767774578341481,
+    "peso_clase": "ninguno"
+   },
+   "f1_interno": 0.63799697998807,
+   "f1_interno_sd": 0.06749984804268319,
+   "segundos_acum": 395.85631930001546
+  }
+ ],
+ "f1": {
+  "EPL": 0.6804006156550035,
+  "promedio_simple": 0.6727887743756716,
+  "pesos_error_global": 0.6795048271729905,
+  "stacking_lineal": 0.6834591964708331,
+  "sin_campo_local": 0.6801147387334577,
+  "sin_kl": 0.6873480708597848,
+  "sin_suavizado": 0.6804006156550035,
+  "pesos_clase_contrarios": 0.6865964331717342,
+  "sin_ajuste_cruzado": 0.5922317531721077
+ },
+ "metricas_EPL": {
+  "f1_macro": 0.6804006156550035,
+  "accuracy": 0.7393247269116187,
+  "balanced_accuracy": 0.696129625622214,
+  "precision_macro": 0.7040092893818507,
+  "recall_macro": 0.696129625622214,
+  "auc_ovr": 0.9425696341239681,
+  "log_loss": 0.6906560684853114,
+  "brier": 0.38289574138709837,
+  "ece": 0.04846258606271587,
+  "mae_ordinal": 0.29493545183714004,
+  "acc_pm1": 0.9677259185700099,
+  "kappa_cuadratico": 0.9144461604568113
+ },
+ "expertos": [
+  "KNN",
+  "Naive Bayes",
+  "Logística L1/L2",
+  "Árbol de decisión",
+  "Random Forest",
+  "XGBoost",
+  "SVM"
+ ],
+ "pesos_globales": [
+  9.999999999960622e-13,
+  9.999999999960622e-13,
+  0.10638718700172736,
+  9.999999999960622e-13,
+  0.8933846534034692,
+  0.00022815959080336285,
+  9.999999999960622e-13
+ ],
+ "pesos_error_global": [
+  0.12398102852444264,
+  0.05624530393123351,
+  0.17070738265738894,
+  0.0983881121227989,
+  0.21652067861220659,
+  0.1802150722104414,
+  0.15394242194148805
+ ],
+ "n_anclas_reales": 9,
+ "n_iter": 3,
+ "historia_perdida": [
+  0.8130315882040065,
+  0.8129749640061855,
+  0.812966636515339,
+  0.812966627366262
+ ],
+ "dif_max_prob_expertos_vs_benchmark": {
+  "KNN": 2.9795400147136775e-08,
+  "Naive Bayes": 2.9789271716040844e-08,
+  "Logística L1/L2": 2.9773094101237518e-08,
+  "Árbol de decisión": 2.9602306828024894e-08,
+  "Random Forest": 2.9796445089047552e-08,
+  "XGBoost": 0.0,
+  "SVM": 2.9784334110161126e-08
+ },
+ "seg_busqueda": 395.85653250000905,
+ "seg_ajuste_final": 175.02824499999406,
+ "seg_inferencia": 0.9244169999728911,
+ "n_train": 7987,
+ "n_val": 2014,
+ "presupuesto": 12,
+ "tam_bloque_km": 1.0,
+ "n_pliegues_cruzados": 5
+}

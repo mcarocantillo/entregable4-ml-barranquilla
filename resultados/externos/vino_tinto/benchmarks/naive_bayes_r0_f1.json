@@ -1,0 +1,20 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "Naive Bayes",
+ "balanceo": "smote",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 1,
+ "params": {
+  "var_smoothing": 5.5641802254313754e-08
+ },
+ "f1_interno_mejor": 0.38435409652551966,
+ "f1": 0.3679915688045769,
+ "accuracy": 0.4125,
+ "mae_ordinal": 0.76875,
+ "seg_busqueda": 2.3747245999984443,
+ "seg_ajuste_final": 0.05874080001376569,
+ "seg_inferencia": 0.015577799989841878,
+ "n_train": 1279,
+ "n_val": 320
+}

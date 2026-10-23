@@ -1,0 +1,25 @@
+{
+ "conjunto": "king_county",
+ "modelo": "XGBoost",
+ "balanceo": "smote",
+ "metodo": "Random",
+ "repeticion": 1,
+ "fold": 1,
+ "params": {
+  "n_estimators": 202,
+  "learning_rate": 0.04696344667875392,
+  "max_depth": 5,
+  "subsample": 0.6175215063148914,
+  "colsample_bytree": 0.577144746033774,
+  "min_child_weight": 7.738685132478183
+ },
+ "f1_interno_mejor": 0.5723094651610602,
+ "f1": 0.5936382131275005,
+ "accuracy": 0.6456692913385826,
+ "mae_ordinal": 0.39665354330708663,
+ "seg_busqueda": 303.27932080003666,
+ "seg_ajuste_final": 17.232618199952412,
+ "seg_inferencia": 0.11376390000805259,
+ "n_train": 3984,
+ "n_val": 1016
+}

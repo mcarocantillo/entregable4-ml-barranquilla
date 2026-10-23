@@ -1,0 +1,23 @@
+{
+ "conjunto": "vino_tinto",
+ "modelo": "Random Forest",
+ "balanceo": "smote",
+ "metodo": "Genética",
+ "repeticion": 0,
+ "fold": 0,
+ "params": {
+  "n_estimators": 141,
+  "max_depth": 22,
+  "max_features": 0.3,
+  "min_samples_leaf": 2
+ },
+ "f1_interno_mejor": 0.5600831626227599,
+ "f1": 0.5585370974172821,
+ "accuracy": 0.65625,
+ "mae_ordinal": 0.371875,
+ "seg_busqueda": 41.08600829995703,
+ "seg_ajuste_final": 1.5781313000479713,
+ "seg_inferencia": 0.0593100999831222,
+ "n_train": 1279,
+ "n_val": 320
+}

@@ -1,0 +1,434 @@
+{
+ "proyecto": "Estrato socioeconómico en Barranquilla — proyecto final",
+ "semilla": 42,
+ "version_modelo_original": "v2",
+ "librerias": {
+  "python": "3.14.6",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "scikit-learn": "1.8.0",
+  "imbalanced-learn": "0.14.2",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10",
+  "joblib": "1.5.3"
+ },
+ "entrenamiento": {
+  "filas": 10001,
+  "descripcion": "submuestra estratificada de entrenamiento del E3 (10 001 viviendas)"
+ },
+ "esquema_entrada": [
+  {
+   "columna": "area_construida",
+   "tipo": "numérica",
+   "minimo": 10.0,
+   "maximo": 1210.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "area_catastral_terreno",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 26120.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "total_habitaciones",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 18.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "total_banios",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 12.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "total_plantas",
+   "tipo": "numérica",
+   "minimo": 1.0,
+   "maximo": 14.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "antiguedad",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 94.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "planta_ubicacion",
+   "tipo": "numérica",
+   "minimo": 1.0,
+   "maximo": 30.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "altura",
+   "tipo": "numérica",
+   "minimo": 1.0,
+   "maximo": 6.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "x_km",
+   "tipo": "numérica",
+   "minimo": -13.041075302134,
+   "maximo": 1.5948897940094502,
+   "admite_faltante": true
+  },
+  {
+   "columna": "y_km",
+   "tipo": "numérica",
+   "minimo": -7.691562709920268,
+   "maximo": 6.7111625196695535,
+   "admite_faltante": true
+  },
+  {
+   "columna": "dist_centro_km",
+   "tipo": "numérica",
+   "minimo": 0.4146465360723674,
+   "maximo": 13.419903412153625,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_log_area",
+   "tipo": "numérica",
+   "minimo": 3.1354942159291497,
+   "maximo": 6.341672885081887,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_banios",
+   "tipo": "numérica",
+   "minimo": 0.125,
+   "maximo": 4.989583333333334,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_habitaciones",
+   "tipo": "numérica",
+   "minimo": 1.0,
+   "maximo": 7.1875,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_antiguedad",
+   "tipo": "numérica",
+   "minimo": 1.75,
+   "maximo": 42.125,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_piso",
+   "tipo": "numérica",
+   "minimo": 1.0,
+   "maximo": 10.301059728352248,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_prop_PH",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 1.0,
+   "admite_faltante": true
+  },
+  {
+   "columna": "knn8_dist_km",
+   "tipo": "numérica",
+   "minimo": 0.0,
+   "maximo": 1.4741603112590167,
+   "admite_faltante": true
+  },
+  {
+   "columna": "tipo_vivienda",
+   "tipo": "categórica",
+   "categorias": [
+    "tv_1",
+    "tv_2",
+    "tv_3",
+    "tv_4"
+   ]
+  },
+  {
+   "columna": "uso",
+   "tipo": "categórica",
+   "categorias": [
+    "Residencial_Apartamentos_4_y_mas_pisos",
+    "Residencial_Apartamentos_4_y_mas_pisos_en_PH",
+    "Residencial_Vivienda_Hasta_3_Pisos",
+    "Residencial_Vivienda_Hasta_3_Pisos_En_PH"
+   ]
+  },
+  {
+   "columna": "condicion_predio",
+   "tipo": "categórica",
+   "categorias": [
+    "Condominio_Unidad_Predial",
+    "Informal",
+    "NPH",
+    "PH_Matriz",
+    "PH_Unidad_Predial"
+   ]
+  }
+ ],
+ "clases": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "modelos": {
+  "KNN": {
+   "archivo": "knn.joblib",
+   "tamano_MB": 0.81,
+   "seg_entrenamiento": 0.2,
+   "ms_inferencia_por_vivienda": 0.7730803500162438,
+   "f1_bucle_externo_media": 0.5611399359157232,
+   "f1_bucle_externo_sd": 0.09935939364820519,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "class_weight",
+   "metodo": "Bayesiana",
+   "params": {
+    "n_neighbors": 54,
+    "weights": "distance",
+    "p": 1
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.6015975253197815
+  },
+  "Naive Bayes": {
+   "archivo": "naive_bayes.joblib",
+   "tamano_MB": 0.04,
+   "seg_entrenamiento": 0.5,
+   "ms_inferencia_por_vivienda": 0.017034899996360764,
+   "f1_bucle_externo_media": 0.4059814058157351,
+   "f1_bucle_externo_sd": 0.07719395773492986,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "smote",
+   "metodo": "Bayesiana",
+   "params": {
+    "var_smoothing": 0.03214719348281692
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.44998189047327203
+  },
+  "Logística L1/L2": {
+   "archivo": "logistica_l1_l2.joblib",
+   "tamano_MB": 0.01,
+   "seg_entrenamiento": 24.4,
+   "ms_inferencia_por_vivienda": 0.01571745000546798,
+   "f1_bucle_externo_media": 0.5878185001807368,
+   "f1_bucle_externo_sd": 0.08871238680863938,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "ninguno",
+   "metodo": "Bayesiana",
+   "params": {
+    "penalty": "l1",
+    "C": 0.47367173240839705
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.6080290638996162
+  },
+  "Árbol de decisión": {
+   "archivo": "arbol_de_decision.joblib",
+   "tamano_MB": 0.06,
+   "seg_entrenamiento": 1.3,
+   "ms_inferencia_por_vivienda": 0.01599690000875853,
+   "f1_bucle_externo_media": 0.5176429356921486,
+   "f1_bucle_externo_sd": 0.099397973565186,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "smote",
+   "metodo": "Grid",
+   "params": {
+    "max_depth": 10,
+    "min_samples_leaf": 5,
+    "criterion": "entropy"
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.5802234510805163
+  },
+  "Random Forest": {
+   "archivo": "random_forest.joblib",
+   "tamano_MB": 8.15,
+   "seg_entrenamiento": 16.7,
+   "ms_inferencia_por_vivienda": 0.057140299992170185,
+   "f1_bucle_externo_media": 0.6050410112647883,
+   "f1_bucle_externo_sd": 0.09731670665752884,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "smote",
+   "metodo": "Genética",
+   "params": {
+    "n_estimators": 141,
+    "max_depth": 21,
+    "max_features": 0.3,
+    "min_samples_leaf": 2
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.6607482454162124
+  },
+  "XGBoost": {
+   "archivo": "xgboost.joblib",
+   "tamano_MB": 0.75,
+   "seg_entrenamiento": 10.4,
+   "ms_inferencia_por_vivienda": 0.07171009999001399,
+   "f1_bucle_externo_media": 0.5986337429820346,
+   "f1_bucle_externo_sd": 0.10714098049909834,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "smote",
+   "metodo": "Random",
+   "params": {
+    "n_estimators": 202,
+    "learning_rate": 0.04696344667875392,
+    "max_depth": 5,
+    "subsample": 0.6175215063148914,
+    "colsample_bytree": 0.577144746033774,
+    "min_child_weight": 7.738685132478183
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.6568967719469085
+  },
+  "SVM": {
+   "archivo": "svm.joblib",
+   "tamano_MB": 0.73,
+   "seg_entrenamiento": 11.5,
+   "ms_inferencia_por_vivienda": 0.037407550000352785,
+   "f1_bucle_externo_media": 0.574712499124215,
+   "f1_bucle_externo_sd": 0.09148343057092234,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "class_weight",
+   "metodo": "Grid",
+   "params": {
+    "gamma": 0.03,
+    "n_components": 300,
+    "C": 10.0
+   },
+   "grupo": "guia",
+   "f1_busqueda_final": 0.6191160869910142
+  },
+  "XGBoost geográfico": {
+   "archivo": "xgboost_geografico.joblib",
+   "tamano_MB": 2.42,
+   "seg_entrenamiento": 11.3,
+   "ms_inferencia_por_vivienda": 0.07244930000160821,
+   "f1_bucle_externo_media": 0.5864512376585027,
+   "f1_bucle_externo_sd": 0.10807495204686196,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "class_weight",
+   "metodo": "Bayesiana",
+   "params": {
+    "n_estimators": 186,
+    "learning_rate": 0.04386723024324426,
+    "max_depth": 8,
+    "frac_vecinos": 0.1233959246959953,
+    "alpha": 0.9747105681970639
+   },
+   "grupo": "referencia",
+   "f1_busqueda_final": 0.6539840138370134
+  },
+  "LightGBM": {
+   "archivo": "lightgbm.joblib",
+   "tamano_MB": 5.61,
+   "seg_entrenamiento": 11.5,
+   "ms_inferencia_por_vivienda": 0.4203902000153903,
+   "f1_bucle_externo_media": 0.5842203867238962,
+   "f1_bucle_externo_sd": 0.12925540314843822,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "class_weight",
+   "metodo": "Bayesiana",
+   "params": {
+    "n_estimators": 318,
+    "learning_rate": 0.16515182865193914,
+    "num_leaves": 61,
+    "min_child_samples": 5,
+    "subsample": 0.9704758496824275,
+    "colsample_bytree": 0.9594460705667762,
+    "reg_lambda": 0.8280763044734758
+   },
+   "grupo": "reciente",
+   "f1_busqueda_final": 0.6569679726824679
+  },
+  "CatBoost": {
+   "archivo": "catboost.joblib",
+   "tamano_MB": 0.16,
+   "seg_entrenamiento": 7.2,
+   "ms_inferencia_por_vivienda": 0.018836600007489324,
+   "f1_bucle_externo_media": 0.6053112865749948,
+   "f1_bucle_externo_sd": 0.10275016813484472,
+   "ida_y_vuelta_identica": true,
+   "balanceo": "class_weight",
+   "metodo": "Bayesiana",
+   "params": {
+    "iterations": 230,
+    "learning_rate": 0.15317709628184267,
+    "depth": 4,
+    "l2_leaf_reg": 9.330606024425668
+   },
+   "grupo": "reciente",
+   "f1_busqueda_final": 0.6643461126237535
+  },
+  "EPL (original)": {
+   "archivo": "epl__original.joblib",
+   "tamano_MB": 10.53,
+   "seg_entrenamiento": 269.8,
+   "ms_inferencia_por_vivienda": 0.7021504500007723,
+   "f1_bucle_externo_media": 0.6180975377069465,
+   "f1_bucle_externo_sd": 0.10696361154165868,
+   "ida_y_vuelta_identica": true,
+   "version": "v2",
+   "params": {
+    "n_anclas": 16,
+    "ancho_banda": 1.375827946956159,
+    "k_anclas": 1,
+    "lam": 0.1161172824887235,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_busqueda_final": 0.6830767602824068,
+   "expertos": [
+    "KNN",
+    "Naive Bayes",
+    "Logística L1/L2",
+    "Árbol de decisión",
+    "Random Forest",
+    "XGBoost",
+    "SVM"
+   ],
+   "historia_perdida": [
+    0.7429694160183805,
+    0.7417171901035168,
+    0.7399160536304007,
+    0.737386952281702,
+    0.733972255124374,
+    0.7296489676675569,
+    0.7247149394202687,
+    0.7199117757369722,
+    0.7161510646723228,
+    0.7138336323610253,
+    0.7126533487801804,
+    0.712177357935592,
+    0.7120670543509818,
+    0.712060087994355,
+    0.7120585446645048,
+    0.7120581628071371,
+    0.7120581548465545
+   ],
+   "pesos_globales": [
+    0.09602857874241875,
+    0.07981626237829095,
+    0.08521862988998069,
+    0.035301199158753,
+    0.195552742025174,
+    0.5080751956618822,
+    7.392143500456528e-06
+   ]
+  }
+ }
+}

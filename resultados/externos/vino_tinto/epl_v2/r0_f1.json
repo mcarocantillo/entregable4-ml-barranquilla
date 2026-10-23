@@ -1,0 +1,180 @@
+{
+ "conjunto": "vino_tinto",
+ "repeticion": 0,
+ "fold": 1,
+ "params": {
+  "n_anclas": 52,
+  "ancho_banda": 1.6853385219729986,
+  "k_anclas": 8,
+  "lam": 0.0022280086146014492,
+  "peso_clase": "balanced",
+  "espacio": "variables"
+ },
+ "espacio_elegido": "variables",
+ "historial": [
+  {
+   "evaluacion": 1,
+   "params": {
+    "n_anclas": 11,
+    "ancho_banda": 3.489105511396341,
+    "k_anclas": 8,
+    "lam": 0.24810409748678125,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5322330331176531,
+   "f1_interno_sd": 0.005729749415800895
+  },
+  {
+   "evaluacion": 2,
+   "params": {
+    "n_anclas": 32,
+    "ancho_banda": 0.26468309821821084,
+    "k_anclas": 10,
+    "lam": 2.1368329072358767,
+    "peso_clase": "balanced",
+    "espacio": "probabilidades"
+   },
+   "f1_interno": 0.5302542098416585,
+   "f1_interno_sd": 0.005568992763969524
+  },
+  {
+   "evaluacion": 3,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.5605506182664317,
+    "k_anclas": 7,
+    "lam": 0.003613894271216527,
+    "peso_clase": "ninguno",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.4984483272880513,
+   "f1_interno_sd": 0.008517931173466876
+  },
+  {
+   "evaluacion": 4,
+   "params": {
+    "n_anclas": 18,
+    "ancho_banda": 1.2920467532058872,
+    "k_anclas": 1,
+    "lam": 0.26926469100861794,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5343252331559745,
+   "f1_interno_sd": 0.006201253105966747
+  },
+  {
+   "evaluacion": 5,
+   "params": {
+    "n_anclas": 32,
+    "ancho_banda": 1.5137088217756896,
+    "k_anclas": 2,
+    "lam": 0.02970972050398579,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5335459882728754,
+   "f1_interno_sd": 0.01863092086432976
+  },
+  {
+   "evaluacion": 6,
+   "params": {
+    "n_anclas": 6,
+    "ancho_banda": 3.8790372487858464,
+    "k_anclas": 1,
+    "lam": 0.01856110363544428,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5240598483268112,
+   "f1_interno_sd": 0.010842555143140661
+  },
+  {
+   "evaluacion": 7,
+   "params": {
+    "n_anclas": 9,
+    "ancho_banda": 0.3792744121401005,
+    "k_anclas": 2,
+    "lam": 7.370986958162115,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5314716630682925,
+   "f1_interno_sd": 0.006756403112504857
+  },
+  {
+   "evaluacion": 8,
+   "params": {
+    "n_anclas": 14,
+    "ancho_banda": 0.9805463005752955,
+    "k_anclas": 3,
+    "lam": 0.6682602306213392,
+    "peso_clase": "ninguno",
+    "espacio": "probabilidades"
+   },
+   "f1_interno": 0.4907485379885605,
+   "f1_interno_sd": 0.008091821227946489
+  },
+  {
+   "evaluacion": 9,
+   "params": {
+    "n_anclas": 6,
+    "ancho_banda": 0.3886920856330484,
+    "k_anclas": 2,
+    "lam": 0.06474146128728694,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5276904661719272,
+   "f1_interno_sd": 0.006435095080697356
+  },
+  {
+   "evaluacion": 10,
+   "params": {
+    "n_anclas": 40,
+    "ancho_banda": 2.0748916106379705,
+    "k_anclas": 6,
+    "lam": 0.801529720504992,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5342498236849842,
+   "f1_interno_sd": 0.007329561554120062
+  },
+  {
+   "evaluacion": 11,
+   "params": {
+    "n_anclas": 42,
+    "ancho_banda": 1.1139390137191916,
+    "k_anclas": 9,
+    "lam": 0.0368564572368985,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5362328216161603,
+   "f1_interno_sd": 0.004790757516444775
+  },
+  {
+   "evaluacion": 12,
+   "params": {
+    "n_anclas": 52,
+    "ancho_banda": 1.6853385219729986,
+    "k_anclas": 8,
+    "lam": 0.0022280086146014492,
+    "peso_clase": "balanced",
+    "espacio": "variables"
+   },
+   "f1_interno": 0.5461747313307539,
+   "f1_interno_sd": 0.009079678984892895
+  }
+ ],
+ "f1": {
+  "EPL v2": 0.5624591551282352,
+  "solo geografico": 0.53505637028526,
+  "solo variables": 0.5538104929895975,
+  "solo probabilidades": 0.552781777046483
+ },
+ "n_train": 1279,
+ "n_val": 320
+}

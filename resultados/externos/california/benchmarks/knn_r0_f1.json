@@ -1,0 +1,22 @@
+{
+ "conjunto": "california",
+ "modelo": "KNN",
+ "balanceo": "class_weight",
+ "metodo": "Bayesiana",
+ "repeticion": 0,
+ "fold": 1,
+ "params": {
+  "n_neighbors": 5,
+  "weights": "distance",
+  "p": 2
+ },
+ "f1_interno_mejor": 0.33330589875164013,
+ "f1": 0.34507130199286823,
+ "accuracy": 0.38751345532831,
+ "mae_ordinal": 1.0333692142088267,
+ "seg_busqueda": 4.507062500051688,
+ "seg_ajuste_final": 0.035843799996655434,
+ "seg_inferencia": 0.03438099997583777,
+ "n_train": 4072,
+ "n_val": 929
+}

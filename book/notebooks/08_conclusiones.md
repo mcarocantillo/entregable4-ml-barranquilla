@@ -18,8 +18,11 @@ sigue y cómo se usaron herramientas de inteligencia artificial.
    están a menos de 0.02 de F1; Nemenyi no los separa.
 4. **Elegir y reportar con los mismos pliegues infla el desempeño.** En particiones nuevas todos los modelos bajan
    entre 0.04 y 0.10 de F1 frente a lo que reportó el E3.
-5. **El modelo original (EPL) tiene el mayor F1 medio** de los 11 modelos en la validación repetida (0.618 frente a
-   0.605 de CatBoost y Random Forest), pero la ventaja es pequeña. Lo que realmente aporta es combinar expertos con
+5. **Frente al modelo base del E1, el salto es grande**: de 0.43 a 0.62 de F1 en las mismas 25 particiones (25 de
+   25 a favor, δ de Cliff 0.84) y de 0.43 a 0.58 en el test; las cuatro pruebas lo confirman. Lo explican sobre todo la
+   vecindad física y los modelos no lineales, que comparten los benchmarks flexibles.
+6. **El modelo original (EPL) tiene el mayor F1 medio** de los 11 modelos en la validación repetida (0.618 frente a
+   0.605 de CatBoost y Random Forest), pero frente a ellos la ventaja es pequeña. Lo que realmente aporta es combinar expertos con
    pesos aprendidos sobre **predicciones fuera de muestra por bloques**; el campo de pesos local no aporta de forma
    medible en zonas nuevas, ni en la versión 1 (geográfica) ni en la 2 (espacio elegido por validación).
 

@@ -135,6 +135,35 @@ for ver in ("v1", "v2"):
           f"R3 en validación: {ve['R3_en_validacion']}")
 
 # %% [markdown]
+# ### 6.3.1 Frente al modelo base del Entregable 1
+#
+# El modelo base del proyecto (logística multinomial B del E1: C = 0.01, sin pesos, **sin vecindad física**) no es un
+# benchmark de R3, pero es el punto de partida. Se reprodujo en las mismas 25 particiones (control: la repetición 0
+# da exactamente los F1 que publicó el E3) y en el test (``experimentos/04b_modelo_base.py``).
+
+# %%
+b = json.loads((RAIZ / "resultados" / "cv5x5" / "base" / "base_vs_epl.json").read_text(encoding="utf-8"))
+x, fb, te = b["epl_vs_base"], b["friedman_con_base"], b["test"]
+pd.DataFrame([
+    {"prueba": "Friedman → Nemenyi (12 modelos)", "estadístico": f"χ² = {fb['chi2']:.1f}",
+     "p": f"Nemenyi {fb['nemenyi_p_epl_vs_base']:.1e}",
+     "efecto": f"rango {fb['rango_epl']:.2f} frente a {fb['rango_base']:.2f} (CD {fb['cd']:.2f})"},
+    {"prueba": "Wilcoxon de rangos con signo", "estadístico": f"W = {x['wilcoxon_W']:.0f}", "p": f"{x['wilcoxon_p']:.1e}",
+     "efecto": f"δ de Cliff {x['delta_cliff']:+.2f} ({x['delta_magnitud']})"},
+    {"prueba": "t corregida de Nadeau-Bengio", "estadístico": f"t = {x['t_NB']:.2f}", "p": f"{x['t_NB_p']:.1e}",
+     "efecto": f"d pareada {x['d_cohen_pareada']:.2f}"},
+    {"prueba": "McNemar en el test", "estadístico": f"χ² = {te['mcnemar']['estadistico']:.0f}",
+     "p": f"{te['mcnemar']['p']:.1e}",
+     "efecto": f"EPL acierta y el base no: {te['mcnemar']['b']:,}; al revés: {te['mcnemar']['c']:,}"},
+]).style.hide(axis="index")
+
+# %% [markdown]
+# **Lectura.** Frente al modelo base, el EPL es **claramente superior**: +0.19 de F1 en la validación (IC BCa
+# [+0.16, +0.22], 25 de 25 pliegues) y +0.16 en el test (IC por bloques [+0.09, +0.22]), con las cuatro pruebas
+# rechazando la igualdad y un efecto grande (δ ≈ 0.84). Pero esa mejora la comparten los benchmarks flexibles con las
+# mismas variables de vecindad (CatBoost y Random Forest llegan a ≈ 0.605): viene sobre todo de la **vecindad física** y
+# de los modelos no lineales, no de la regla de combinación. Por eso la pregunta de R3 es la de la sección 6.3.
+#
 # ## 6.4 Reglas estándar, ablación y versión 1 frente a versión 2
 
 # %%

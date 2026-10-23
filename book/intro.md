@@ -25,9 +25,10 @@ en un dashboard con predicción en vivo y su explicación.
 
 - Con el catastro abierto se recupera buena parte del estrato: **F1 macro ≈ 0.60–0.62** en zonas nuevas y ≈ 0.58 en el
   test, con casi todos los errores entre estratos vecinos. La ubicación y la vecindad física dominan.
-- El modelo original, un **ensamble con pesos locales aprendidos por gradiente exponenciado (EPL)**, tiene el **mayor F1
-  medio** de los 11 modelos en la validación repetida 5 × 5 (0.618 frente a 0.605 del mejor benchmark), pero la ventaja
-  **no es estadísticamente concluyente**: solo una de tres pruebas la confirma y el tamaño del efecto es despreciable. El
+- El modelo original, un **ensamble con pesos locales aprendidos por gradiente exponenciado (EPL)**, supera con
+  claridad al modelo base del E1 (0.62 frente a 0.43 de F1 en las mismas particiones; las cuatro pruebas lo confirman)
+  y tiene el **mayor F1 medio** de los 11 modelos en la validación repetida 5 × 5 (0.618 frente a 0.605 del mejor
+  benchmark), pero frente a los benchmarks la ventaja **no es estadísticamente concluyente**: solo una de tres pruebas la confirma y el tamaño del efecto es despreciable. El
   test y tres conjuntos de datos adicionales tampoco la confirman.
 - Veredicto de la guía: **R1 sí, R2 sí, R3 no** (tope 4.0). Lo que aporta el modelo es combinar expertos con pesos
   aprendidos sobre predicciones fuera de muestra por bloques espaciales; el campo de pesos local no se traslada a zonas

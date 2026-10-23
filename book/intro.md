@@ -3,7 +3,7 @@
 **María Carolina Cantillo Orozco (200179105) y Juan Camilo Oñoro Araujo (200177329)**
 Profesor Lihki Rubio · Machine Learning · Universidad del Norte · octubre de 2026
 
-**Dashboard:** *(URL de Render: se completa al desplegar)* · **Repositorio:** *(se completa al publicar)* ·
+**Dashboard:** *(URL de Render: se completa al desplegar)* · **Repositorio:** [github.com/mcarocantillo/entregable4-ml-barranquilla](https://github.com/mcarocantillo/entregable4-ml-barranquilla) ·
 Entregables anteriores: [E1](https://mcarocantillo.github.io/entregable1-ml-barranquilla/v3/),
 [E2](https://mcarocantillo.github.io/entregable2-ml-barranquilla/v3/),
 [E3](https://mcarocantillo.github.io/entregable3-ml-barranquilla/)

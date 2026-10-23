@@ -10,7 +10,7 @@ Autores: María Carolina Cantillo Orozco (200179105) y Juan Camilo Oñoro Araujo
 Machine Learning, Universidad del Norte, octubre de 2026.
 
 - Dashboard: *(URL de Render, se completa al desplegar)*
-- Libro: *(URL de GitHub Pages, se completa al publicar)*
+- Libro: https://mcarocantillo.github.io/entregable4-ml-barranquilla/
 - Entregables anteriores: [E1](https://mcarocantillo.github.io/entregable1-ml-barranquilla/v3/) ·
   [E2](https://mcarocantillo.github.io/entregable2-ml-barranquilla/v3/) ·
   [E3](https://mcarocantillo.github.io/entregable3-ml-barranquilla/)

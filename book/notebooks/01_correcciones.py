@@ -18,10 +18,9 @@
 # Qué se corrigió del entregable anterior, cómo, dónde está en este libro y con qué evidencia.
 # :::
 #
-# No recibimos observaciones escritas del docente sobre el Entregable 3 (la guía lo llama «Entregable 2»). Por eso
-# la tabla es una **autorrevisión**: releímos el libro, el código y los resultados del E3 y anotamos cada debilidad
-# que encontramos, las que el propio E3 ya reconocía y las nuevas. Si llegan observaciones del docente, se agregan
-# como filas nuevas con la misma estructura.
+# La tabla reúne las correcciones del Entregable 3 (la guía lo llama «Entregable 2»): para cada debilidad del libro,
+# el código o los resultados del E3 —las que el propio E3 ya reconocía y las que se identificaron después— se indica
+# la acción realizada, dónde está en este libro y con qué evidencia.
 #
 # La guía pide reportar los cambios desfavorables: varios de estos arreglos **bajan** cifras que el E3 había
 # publicado (filas 2, 5 y 17).
@@ -84,7 +83,7 @@ filas = [
     ("18", "El E3 no comparaba con métodos recientes del estado del arte.",
      "LightGBM y CatBoost con el mismo protocolo y presupuesto.", "Cap. 3", "experimentos/02b_recientes_5x5.py"),
 ]
-tabla = pd.DataFrame(filas, columns=["#", "Observación (autorrevisión)", "Acción realizada", "Ubicación en el libro",
+tabla = pd.DataFrame(filas, columns=["#", "Observación", "Acción realizada", "Ubicación en el libro",
                                      "Evidencia"])
 pd.set_option("display.max_colwidth", None)
 tabla.style.hide(axis="index")

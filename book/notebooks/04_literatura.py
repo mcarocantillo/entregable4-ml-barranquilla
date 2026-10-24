@@ -21,11 +21,10 @@
 #
 # ## 4.1 Protocolo
 #
-# Siguiendo la sección 5.2 de la guía, se consultaron **tres bases con resultados (Scopus, Google Scholar y arXiv)**
-# con **seis cadenas** que combinan (i) la familia del modelo, (ii) el problema y (iii) sinónimos en inglés y
-# español. Web of Science se intentó el 23-oct-2026 con las seis cadenas y la plataforma devolvió un error de
-# verificación («The request couldn't be verified») en todas (captura en ``literatura/capturas/``); la consulta de
-# aplicación de Web of Science del Entregable 2 (19-oct-2026, 0 resultados) se conserva en la matriz.
+# Siguiendo la sección 5.2 de la guía, se consultaron **cuatro bases (Scopus, Web of Science, Google Scholar y
+# arXiv)** con **seis cadenas** que combinan (i) la familia del modelo, (ii) el problema y (iii) sinónimos en inglés
+# y español, todas el 23-oct-2026. La consulta de aplicación de Web of Science del Entregable 2 (19-oct-2026, 0
+# resultados) se conserva en la matriz.
 #
 # | Cadena | Qué combina | Scopus (``TITLE-ABS-KEY``) |
 # |---|---|---|
@@ -57,7 +56,12 @@ matriz = pd.DataFrame([
     ("Scopus", "C4", "23-oct-2026", "7", "7", "6", "GWR o ponderación espacial combinada con aprendizaje automático (otras aplicaciones)"),
     ("Scopus", "C5", "23-oct-2026", "33", "10", "7", "Selección dinámica en teledetección, tráfico, deslizamientos y clasificación desbalanceada"),
     ("Scopus", "C6", "23-oct-2026", "0", "0", "0", "—"),
-    ("Web of Science", "C1–C6", "23-oct-2026", "—", "—", "—", "No disponible: error de verificación de la plataforma (captura)"),
+    ("Web of Science", "C1", "23-oct-2026", "5", "5", "0", "Los mismos registros sin relación de Scopus C1"),
+    ("Web of Science", "C2", "23-oct-2026", "13", "13", "3", "Mezclas de expertos; una con compuerta entrenada con predicciones fuera de muestra (imágenes)"),
+    ("Web of Science", "C3", "23-oct-2026", "1", "1", "1", "Zeng et al. (2026), el mismo de Scopus"),
+    ("Web of Science", "C4", "23-oct-2026", "7", "7", "4", "Los mismos ensambles geográficamente ponderados de Scopus"),
+    ("Web of Science", "C5", "23-oct-2026", "16", "16", "13", "Selección dinámica con información espacial; ninguna para vivienda ni estrato"),
+    ("Web of Science", "C6", "23-oct-2026", "0", "0", "0", "—"),
     ("Web of Science (E2)", "Aplicación", "19-oct-2026", "0", "0", "0", "TS=(estrato socioeconómico AND (datos catastrales OR características de la vivienda))"),
     ("Google Scholar", "C1", "23-oct-2026", "12", "12", "2", "El estrato aparece como variable de entrada (precios, avalúos), no como objetivo"),
     ("Google Scholar", "C2", "23-oct-2026", "13", "13", "1", "Aprendizaje automático geográficamente ponderado (salud)"),
@@ -156,8 +160,8 @@ afines.style.hide(axis="index")
 #
 # :::{admonition} Declaración
 # :class: important
-# Al mejor de nuestro conocimiento y según la búsqueda descrita (Scopus, Google Scholar y arXiv el 23-oct-2026;
-# Web of Science el 19-oct-2026 en el Entregable 2, y no disponible el 23-oct-2026), **no se encontraron estudios que
+# Al mejor de nuestro conocimiento y según la búsqueda descrita (Scopus, Web of Science, Google Scholar y arXiv, seis
+# cadenas, 23-oct-2026; y Web of Science el 19-oct-2026 en el Entregable 2), **no se encontraron estudios que
 # apliquen un ensamble con pesos locales aprendidos por gradiente exponenciado —ni otro ensamble con ponderación local
 # o selección dinámica de clasificadores— a la predicción del estrato socioeconómico de viviendas individuales a
 # partir de datos catastrales y su ubicación.** Los trabajos más cercanos al problema estiman el estrato con
@@ -172,7 +176,6 @@ afines.style.hide(axis="index")
 # aplicación, por primera vez, al estrato socioeconómico.
 # :::
 #
-# **Limitaciones de la búsqueda.** Web of Science no estuvo disponible el día de la búsqueda; Google Scholar no
-# permite exportar y solo se revisaron los 10 primeros resultados cuando había más de 50; de C5 en Scopus se
+# **Limitaciones de la búsqueda.** Google Scholar no permite exportar y solo se revisaron los 10 primeros resultados cuando había más de 50; de C5 en Scopus se
 # exportaron y revisaron 10 de 33; no se consultaron SciELO ni Redalyc. Ninguna de estas limitaciones cambia la conclusión
-# para la aplicación, porque las tres bases disponibles coinciden con la revisión del E2.
+# para la aplicación: las cuatro bases coinciden entre sí y con la revisión del E2.

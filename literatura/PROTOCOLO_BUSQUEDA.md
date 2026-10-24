@@ -70,8 +70,7 @@ está en el capítulo 4 del libro (`book/notebooks/04_literatura.py`) y el criba
 de cada decisión, en `cribado.csv`. Exportes de Scopus en `exportes/`; captura del error de Web of Science en
 `capturas/`.
 
-C3 en Google Scholar se repitió el 23-oct-2026 (376 resultados, 10 revisados, 4 relevantes). Pendiente solo, si la
-plataforma lo permite, **Web of Science** (el 23-oct devolvió «The request couldn't be verified» en todas las cadenas).
+C3 en Google Scholar se repitió el 23-oct-2026 (376 resultados, 10 revisados, 4 relevantes). Web of Science se repitió el mismo 23-oct-2026 con las seis cadenas (5, 13, 1, 7, 16 y 0 resultados).
 
 ## Tabla de métodos afines (se completa con la revisión; 5–10 por familia algorítmica)
 

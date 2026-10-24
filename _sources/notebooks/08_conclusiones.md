@@ -30,7 +30,7 @@ sigue y cómo se usaron herramientas de inteligencia artificial.
 
 | Condición | Veredicto | Evidencia |
 |---|---|---|
-| **R1. Novedad en la aplicación** | **Sí** | Búsqueda en Scopus, Google Scholar y arXiv (6 cadenas, 23-oct-2026) y Web of Science (E2): nadie aplica un ensamble con pesos locales —ni otro modelo— para predecir el estrato de viviendas con el catastro. La idea de pesos por región existe en otras aplicaciones (Zhou y Lin, 2026; Liu, 2024): la novedad declarada es la regla de aprendizaje, el ajuste cruzado espacial, la elección del espacio de competencia y la aplicación (capítulo 4). |
+| **R1. Novedad en la aplicación** | **Sí** | Búsqueda en Scopus, Web of Science, Google Scholar y arXiv (6 cadenas, 23-oct-2026): nadie aplica un ensamble con pesos locales —ni otro modelo— para predecir el estrato de viviendas con el catastro. La idea de pesos por región existe en otras aplicaciones (Zhou y Lin, 2026; Liu, 2024): la novedad declarada es la regla de aprendizaje, el ajuste cruzado espacial, la elección del espacio de competencia y la aplicación (capítulo 4). |
 | **R2. Implementación algorítmica propia** | **Sí** | Clase propia compatible con scikit-learn (``src/original_model.py``): K-medias, núcleo, pérdida convexa, gradiente y gradiente exponenciado programados con numpy y scipy; formulación, pseudocódigo, cuatro proposiciones demostradas, 30 pruebas unitarias y ablación (capítulo 5). |
 | **R3. Superioridad estadísticamente verificada** | **No** | Mayor media que todos los benchmarks, pero frente al mejor (CatBoost) solo Wilcoxon-Holm rechaza; la t de Nadeau-Bengio y Nemenyi no, y el δ de Cliff es despreciable. El test y los conjuntos adicionales no confirman la ventaja (capítulo 6). |
 
@@ -46,8 +46,8 @@ es lo que pide la guía; manipular particiones, semillas o pruebas para obtener 
 - **Modelo original.** Su costo está dominado por entrenar los expertos 6 veces (ajuste cruzado); el campo local no se
   traslada a zonas sin datos cerca; con 12 evaluaciones, la búsqueda que incluye el espacio de competencia explora
   menos cada espacio que una búsqueda con el espacio fijo.
-- **Revisión de literatura.** Web of Science no estuvo disponible el día de la búsqueda; en Google Scholar solo se
-  revisaron los 10 primeros resultados cuando había más de 50.
+- **Revisión de literatura.** En Google Scholar solo se revisaron los 10 primeros resultados cuando había más de 50,
+  y no se consultaron SciELO ni Redalyc.
 - **Uso.** El modelo no debe usarse para decisiones sobre personas (crédito, seguros, programas sociales).
 
 ## 8.4 Trabajo futuro
@@ -57,7 +57,7 @@ es lo que pide la guía; manipular particiones, semillas o pruebas para obtener 
 - Agregar información que hoy falta: imágenes de fachadas o satelitales, variables del barrio, y un modelo en dos etapas
   como el del DANE (zonas homogéneas y luego viviendas atípicas).
 - Usar más bloques de test y una validación con todo el entrenamiento en lugar de la submuestra.
-- Ampliar la búsqueda bibliográfica a Web of Science, SciELO y Redalyc.
+- Ampliar la búsqueda bibliográfica a SciELO y Redalyc.
 
 ## 8.5 Declaración de autoría y uso de herramientas de inteligencia artificial
 
